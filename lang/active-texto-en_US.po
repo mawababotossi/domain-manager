@@ -1,0 +1,858 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: activeTexto\n"
+"POT-Creation-Date: 2015-08-28 01:33+0100\n"
+"PO-Revision-Date: 2015-08-28 01:34+0100\n"
+"Last-Translator: Tim <mawababotossi@yahoo.fr>\n"
+"Language-Team: Mawaba <mawababotossi@yahoo.fr>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;{$__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto\n"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:25
+msgid "K"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:25
+msgid "100K+"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:25
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:27
+msgid "10k unit"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:25
+msgid "Twitter Tweet Button"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:27
+msgid "Twitter Follow Button"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:27
+msgid "M"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/lib/bootstrap2/js/widgets.js:27
+msgid "%{followers_count} followers"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:241
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:245
+msgid "Téléphone ou Email"
+msgstr "Phone or Email"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:245
+#, fuzzy
+msgid "identifiant"
+msgstr "Username"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:253
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:67
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:15
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:328
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:14
+msgid "Nouveau message"
+msgstr "New campaign"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:254
+msgid "Inscription"
+msgstr "Sign up"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:255
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:558
+msgid "Contacts"
+msgstr "Contacts"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:256
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:100
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:19
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:176
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:18
+msgid "Historique"
+msgstr "History"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:257
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:118
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:17
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:387
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:542
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:16
+msgid "Groupes"
+msgstr "Groups"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:258
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:23
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:22
+msgid "Rapports"
+msgstr "Reports"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:259
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:21
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:758
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:20
+msgid "Envois différés"
+msgstr "Scheduled"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:260
+msgid "Vue d'ensemble"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/activetexto.php:282
+msgid "Every Minute"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:87
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup_ajax.php:73
+msgid "Votre code de verification est le suivant: "
+msgstr "Your verification code is:"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:88
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup_ajax.php:74
+msgid ""
+". Ce code tient lieu de mot de passe egalement. Vous pouvez le modifier, une "
+"fois connecté."
+msgstr ". This code acts as a password also. You can change it once connected."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:332
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:44
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:239
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:245
+msgid "Pays"
+msgstr "Country"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:332
+msgid "Prix du sms"
+msgstr "SMS price"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:346
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:58
+msgid ""
+"Votre crédit est insuffisant pour compléter cette action. Vous devriez "
+"diminuer le nombre de destinataires."
+msgstr ""
+"Your credit is insufficient to complete this action. You should reduce the "
+"number of recipients."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:353
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:63
+msgid "Veuillez saisir le contenu du message SVP"
+msgstr "Please, enter the content of the message"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:355
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:65
+msgid "Veuillez saisir un numéro de destinataire ou choisir un groupe SVP"
+msgstr "Enter a phone number or choose a group please"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:409
+msgid "La date ou l'heure d'envoi est erronnée"
+msgstr "Bad date parameter"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:427
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:64
+msgid "Messages enregistrés"
+msgstr "Message saved"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:431
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:69
+msgid "Traitement..."
+msgstr "Processing..."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:438
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:76
+msgid "Transmis"
+msgstr "Sent"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:439
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:77
+msgid "echecs"
+msgstr "Failed"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:449
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:87
+msgid "SMS traités"
+msgstr "SMS handeled"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:451
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:89
+msgid "Traitement terminé"
+msgstr "Finished"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/app.controllers.php:460
+msgid ""
+"Cette tâche est exécutée en arrière plan. Vous pouvez fermer le site et "
+"revenir plus tard. Vous pourrez voir l'état d'avancement de la tâche dans "
+"l'historique."
+msgstr ""
+"This task is handeled in background. You can close the site and comme back "
+"later if you wish. "
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:44
+msgid "Prix / sms"
+msgstr "Price / sms"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:82
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:852
+msgid "Télécharger en CSV"
+msgstr "Download CSV"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:87
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:115
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:77
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:115
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:193
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:286
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:377
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:775
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:865
+msgid "Destinataires"
+msgstr "To"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:87
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:289
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:776
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:868
+msgid "Statut"
+msgstr "Status"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:104
+msgid "En attente"
+msgstr "Pending"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:106
+msgid "Echec"
+msgstr "Failed"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:108
+msgid "Expiré"
+msgstr "Expired"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:110
+msgid "Délivré"
+msgstr "Delivered"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/ajax_functions.php:112
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:54
+msgid "Différé"
+msgstr "Scheduled"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_group_details.php:79
+msgid "Groupe"
+msgstr "Group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:30
+msgid "Groupe ajouté avec succès"
+msgstr "The group has been added"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:33
+msgid "Veuillez entrer un nom de groupe valide"
+msgstr "Please give a valid name"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:37
+msgid "Vous avez déjà créé un groupe portant le même nom"
+msgstr "A group with same name already exists"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:75
+msgid "Importer dans le groupe "
+msgstr "Import to the group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:100
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:557
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:640
+msgid "Nom du groupe"
+msgstr "Group Name"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:100
+msgid "Nb. contacts"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_groups.php:100
+msgid "Action"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:58
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:39
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:266
+msgid "Détails"
+msgstr "Details"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:102
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/dashboard.php:47
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:102
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:178
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:760
+msgid "Envoyer des SMS"
+msgstr "Start new SMS campaign"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:115
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:77
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:82
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:283
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:504
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:773
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:862
+msgid "Date"
+msgstr "Date"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:115
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:77
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:338
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:774
+msgid "Message"
+msgstr "Message"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:115
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:194
+msgid "Réussite"
+msgstr "Success"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:143
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:96
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:706
+msgid "Rapport d'envoi"
+msgstr "Delivery report"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:150
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:103
+msgid "Chargement en cours"
+msgstr "Loading"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_history.php:153
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:106
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:47
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:455
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:627
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:661
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:671
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:694
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:843
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:887
+msgid "Fermer"
+msgstr "Close"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_report.php:23
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:715
+msgid "Date début"
+msgstr "Date start"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_report.php:29
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:727
+msgid "Date fin"
+msgstr "Date end"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_report.php:36
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:742
+msgid "Télécharger le raport"
+msgstr "Download"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:39
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:474
+msgid "Annuler"
+msgstr "Cancel"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:73
+msgid "Ajouter"
+msgstr "Add"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:77
+msgid "Programmé pour"
+msgstr "Send on"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_scheduled.php:89
+msgid "Afficher tout"
+msgstr "Show all"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:31
+msgid "Choisissez un groupe"
+msgstr "Choose a group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:41
+msgid "Confirmation de l'envoi"
+msgstr "Confirm"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:44
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:460
+msgid "Chargement en cours..."
+msgstr "Loading"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:48
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:161
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:466
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:230
+msgid "Confirmer"
+msgstr "Confirm"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:74
+msgid "Indicatif par defaut"
+msgstr "Default prefix"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:74
+msgid ""
+"Ce préfixe sera automatiquement ajouté aux numéros qui ne sont pas au format "
+"international"
+msgstr "Ok send"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:79
+msgid "Evoi différé - Cochez pour activer"
+msgstr "Schedule - clic the checkbox to activate"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:87
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:513
+msgid "Heure"
+msgstr "Hour"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:108
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:364
+msgid "Expéditeur"
+msgstr "From"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:117
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:383
+msgid "Saisie manuelle"
+msgstr "Manual mode"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:122
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:398
+msgid "Copiez/collez ou listez les numéros des destinataires ici"
+msgstr "Copy/paste or list phone numbers here"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:140
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:160
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:161
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:471
+msgid "Envoyer maintenant"
+msgstr "Send now"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:161
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:472
+msgid "Programmer l'envoi"
+msgstr "Schedule"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/app_sendsms.php:231
+msgid "caractères restant(s), "
+msgstr "symbols remaining"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/dashboard.php:45
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:100
+msgid "Tableau de bord"
+msgstr "Dashboard"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:21
+msgid "Veuillez vous logger SVP"
+msgstr "You must log in"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/sendsms_execute.php:46
+msgid "L'heure d'envoi est erronnée"
+msgstr "The schedule time is invalid"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:32
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:33
+msgid "Vérifiez que tous les champs sont bien renseignés."
+msgstr "Please ensure that all fields are completed."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:37
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:38
+msgid "Le code de vérification que vous avez renseigné est erroné."
+msgstr "The verification code you specified is wrong."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:42
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:43
+msgid "Ce numéro existe déjà dans notre base de données."
+msgstr "This phone number already exists in our database."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:47
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:47
+msgid ""
+"Félicitations! Vous devez maintenant confirmer votre numéro de téléphone en "
+"fournissant le code de vérification que vous recevez à l'instant par sms."
+msgstr ""
+"Congratulations! You now need to confirm your phone number by providing the "
+"verification code you receive at the time by sms."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:52
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:52
+msgid ""
+"Félicitations votre compte a été créé avec succes. Vous pouvez dès à présent "
+"vous connecter à votre compte et envoyer des SMS."
+msgstr ""
+"Congratulations ! Your account has been created successfully. You can login "
+"and start sending SMS."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:53
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:53
+msgid "Se connecter"
+msgstr "Log in"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:61
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:62
+msgid "Téléphone mobile"
+msgstr "Phone number"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:75
+msgid "Ex. 22891278521"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:80
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:105
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:92
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:105
+msgid "Prénom"
+msgstr "First Name"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:83
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:102
+msgid "Ex. Timothy"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:87
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:112
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:680
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:107
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:112
+msgid "Nom"
+msgstr "Last Name"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:90
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:117
+msgid "Ex. Grant"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:94
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:132
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:205
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:122
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:135
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:211
+msgid "Société"
+msgstr "Company"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:97
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:132
+msgid "Ex. PWS S.A.R.L"
+msgstr "Ex. PWS Ltd."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:101
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:125
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:137
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:127
+msgid "E-mail"
+msgstr "E-mail"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:104
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:147
+msgid "Entrez une adresse mail valide"
+msgstr "Enter a valid e-mail"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:108
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:153
+msgid "Dispositions légales"
+msgstr "Terms of use"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:111
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:162
+msgid "J'ai lu et j'accepte les "
+msgstr "I have read and agree to the "
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:111
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:163
+msgid "conditions d'utilisation"
+msgstr "Terms of use"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:123
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:177
+msgid "Code de vérification"
+msgstr "Verification code"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:125
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:185
+msgid ""
+"Vous allez recevoir un un code de verification par sms dans quelques "
+"secondes. Entrez ce code ici et cliquez sur créer mon compte"
+msgstr ""
+"You will receive a verification code via SMS in a few seconds. Enter this "
+"code here and click Create Account"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:126
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:186
+msgid "Entrez le code reçu par sms."
+msgstr "Enter the code received by SMS."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:130
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:155
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/pricing.php:79
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:195
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:224
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/topup.php:66
+msgid "Créer mon compte"
+msgstr "Create free account"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/signup.php:215
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:288
+msgid "Veuillez vous déconnecter pour procéder"
+msgstr "Please log out to proceed"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_menu.php:26
+msgid "Profil"
+msgstr "Profile"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:97
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:97
+msgid "Identifiant"
+msgstr "Username"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:100
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:100
+msgid "Ne peut être changé."
+msgstr "Cant be changed."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:118
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:119
+msgid "Surnom"
+msgstr "Nickname"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:119
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:125
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:120
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:127
+msgid "(requis)"
+msgstr "(required)"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:139
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:212
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:143
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:218
+msgid "Langue"
+msgstr "Language"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:149
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:222
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:154
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:228
+msgid "Devise"
+msgstr "Currency"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:158
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:163
+msgid "Ignorez ces champs si vous ne souhaitez pas chager de mot de passe."
+msgstr "Ignore these fields if you do not want chage your password."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:160
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:166
+msgid "Nouveau mot de passe"
+msgstr "New password"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:166
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:172
+msgid "Vérification"
+msgstr "Verification"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:169
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:175
+msgid "Saisir une deuxième fois le mot de passe."
+msgstr "Enter the password a second time."
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:174
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:180
+msgid "Mettre à jour"
+msgstr "Update"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:197
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:203
+msgid "Balance"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:232
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:238
+msgid "Sender IDs"
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:235
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:241
+msgid "Séparez par une virgule"
+msgstr "Separate with commas"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/modules/user_profile.php:246
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:434
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/user_profile.php:252
+msgid "Préfix par défaut"
+msgstr "Default phone prefix"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:109
+msgid "Vue d'ensemble du mois"
+msgstr "Sendings along the month"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:135
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:141
+msgid "SMS envoyés"
+msgstr "SMS sent"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:137
+msgid "Dépuis le début"
+msgstr "All time"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:144
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:154
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:164
+msgid "Ces derniers"
+msgstr "Last"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:146
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:156
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:166
+msgid "Jours"
+msgstr "Days"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:151
+msgid "SMS délivrés"
+msgstr "SMS delivered"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:161
+msgid "Taux de réussite"
+msgstr "Success rate"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:269
+msgid "Message de: "
+msgstr "Message from"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:351
+msgid "caractère(s)"
+msgstr "symbols"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:356
+msgid "caracteres par page"
+msgstr "symbols per page"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:430
+msgid ""
+"Ce prefix (code du pays) sera automatiquement ajouté aux numéros qui sont au "
+"format local lors de l'envoi. Ignorez ceci si vos numéros sont dejà au "
+"format international ou cliquez pour modifier."
+msgstr ""
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:457
+msgid "Confirmation d'envoi"
+msgstr "Confirmation"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:481
+msgid "Message flash"
+msgstr "Send as flash"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:492
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:790
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:879
+msgid "Envoi différé"
+msgstr "Schedule"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:544
+msgid "Ajouter un groupe"
+msgstr "Add a group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:559
+msgid "Date de création"
+msgstr "Création group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:589
+msgid "Action de groupe"
+msgstr "Group action"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:599
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:815
+msgid "Afficher"
+msgstr "Show"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:605
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:821
+msgid "éléments par page"
+msgstr "entries per page"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:629
+msgid "Créer un groupe"
+msgstr "Create"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:646
+msgid "Fichier"
+msgstr "File"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:653
+msgid "Créer le groupe"
+msgstr "Create a group"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:673
+msgid "Contacts du groupe"
+msgstr "Contacts"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:681
+msgid "Téléphone"
+msgstr "Phone"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:797
+msgid "Utiliser ceci comme modèle pour un nouveau message"
+msgstr "Use this as model"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:848
+msgid "Envoi programé pour le: "
+msgstr "Scheduled  for:"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:899
+msgid "API"
+msgstr "API"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:905
+msgid ""
+"Nous travaillons dur pour rendre disponible ce service très prochainement."
+msgstr "This service will be available soon"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:916
+msgid "Tâches en cours d'exécution"
+msgstr "Running tasks"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:926
+msgid "De"
+msgstr "From"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:926
+msgid "à"
+msgstr "to"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:929
+msgid "sur"
+msgstr "off"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/app.views.php:930
+msgid "envoyés"
+msgstr "sent"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/nav.php:25
+msgid "Mon compte"
+msgstr "My account"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/pricing.php:44
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/topup.php:31
+msgid "Entrez le nom ou le code téléphonique du pays"
+msgstr "Enter the name or the phone prefix of the country"
+
+#: /opt/lampp/htdocs/v2/wp-content/plugins/ActiveTexto/views/signup.php:193
+msgid "Chargement..."
+msgstr "Loading..."
+
+#~ msgid "Caractère(s)"
+#~ msgstr "symbols"
+
+#~ msgid "sms Traités"
+#~ msgstr "sms processed"
+
+#~ msgid "Veuillez choisir un groupe"
+#~ msgstr "Choose a group"
+
+#~ msgid "Compose"
+#~ msgstr "Nouveau message"
+
+#~ msgid "Scheduled"
+#~ msgstr "Envois différés"

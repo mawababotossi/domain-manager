@@ -1,0 +1,3 @@
+.woocommerce #content table.cart img, .woocommerce table.cart img, .woocommerce-page #content table.cart img, .woocommerce-page table.cart img{
+display:none !important;
+}

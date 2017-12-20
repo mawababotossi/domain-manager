@@ -1,0 +1,1135 @@
+CountryCode,CountryName,Network,NetworkName,Prefix,Price
+TD,Chad,62201,Airtel,235,0.00400000
+TD,Chad,62203,Tigo,235,0.00400000
+ET,Ethiopia,63601,Ethio Mobile,251,0.00490000
+GW,Guinea-Bissau,63203,Orange,245,0.00500000
+GW,Guinea-Bissau,63201,Guinetel,245,0.00500000
+GW,Guinea-Bissau,63202,Areeba,245,0.00500000
+LS,Lesotho,65102,Econet Ezi-Cel,266,0.00500000
+LS,Lesotho,65101,Vodacom,266,0.00500000
+PK,Pakistan,41006,Telenor,92,0.00500000
+PK,Pakistan,41007,Warid,92,0.00500000
+PK,Pakistan,41001,Mobilink,92,0.00500000
+PK,Pakistan,41003,Ufone,92,0.00500000
+PK,Pakistan,41004,ZONG,92,0.00500000
+PY,Paraguay,74401,VOX,595,0.00500000
+PY,Paraguay,74402,Claro,595,0.00500000
+PY,Paraguay,74403,Personal,595,0.00500000
+PY,Paraguay,74404,Tigo,595,0.00500000
+TJ,Tajikistan,43605,Beeline TJ,992,0.00500000
+TJ,Tajikistan,43602,INDIGO Tajikistan,992,0.00500000
+TJ,Tajikistan,43601,INDIGO Somoncom,992,0.00500000
+TJ,Tajikistan,43604,Babilon-Mobile,992,0.00500000
+TJ,Tajikistan,43603,MLT (Mobile Lines of Tajikistan),992,0.00500000
+CA,Canada,302220,"Mike, TELUS Mobility",1,0.00550000
+CA,Canada,302680,SaskTel Mobility,1,0.00550000
+CA,Canada,302610,"Bell Mobility, Solo Mobile",1,0.00550000
+CA,Canada,302720,ROGERS,1,0.00550000
+CA,Canada,302490,WIND,1,0.00550000
+CA,Canada,302650,TBayTel Mobility,1,0.00550000
+CA,Canada,302660,MTS Mobility,1,0.00550000
+CA,Canada,302320,mobilicity,1,0.00550000
+CA,Canada,302370,Fido,1,0.00550000
+CA,Canada,302630,Bell Aliant,1,0.00550000
+CA,Canada,302500,Videotron,1,0.00550000
+CA,Canada,302760,Public Mobile,1,0.00550000
+CA,Canada,302380,DMTS Mobility,1,0.00550000
+PR,Puerto Rico,33011,Claro,1787,0.00550000
+US,United States,311340,Illinois Valley Cellular,1,0.00550000
+US,United States,311740,TelAlaska Cellular,1,0.00550000
+US,United States,311910,SI Wireless,1,0.00550000
+US,United States,310860,Five Star Wireless,1,0.00550000
+US,United States,310050,ACS Wireless,1,0.00550000
+US,United States,310760,"PTCI Wireless, Bonfire",1,0.00550000
+US,United States,310150,AT&T Mobility,1,0.00550000
+US,United States,310011,Northstar Technology,1,0.00550000
+US,United States,311540,Proximity Mobility,1,0.00550000
+US,United States,310460,Simmetry,1,0.00550000
+US,United States,311440,Bluegrass Cellular,1,0.00550000
+US,United States,311380,New Dimension Wireless,1,0.00550000
+US,United States,311390,Midwest Wireless,1,0.00550000
+US,United States,310004,Verizon Wireless,1,0.00550000
+US,United States,310350,Mohave Wireless,1,0.00550000
+US,United States,310870,PACE,1,0.00550000
+US,United States,310290,NEP Wireless,1,0.00550000
+US,United States,310750,Appalachian Wireless,1,0.00550000
+US,United States,310390,CellularOne of East Texas,1,0.00550000
+US,United States,311130,Alltel,1,0.00550000
+US,United States,311330,Bug Tussel Wireless,1,0.00550000
+US,United States,311050,Thumb Cellular,1,0.00550000
+US,United States,310710,ASTAC Cellular - CellularOne,1,0.00550000
+US,United States,310770,i wireless,1,0.00550000
+US,United States,310040,MTA Wireless,1,0.00550000
+US,United States,310100,PLATEAU Wireless,1,0.00550000
+US,United States,311000,Mid-Tex Cellular,1,0.00550000
+US,United States,311090,Long Lines Wireless,1,0.00550000
+US,United States,311190,Cellular One of East Central Illinois,1,0.00550000
+US,United States,311710,Northeast Wireless,1,0.00550000
+US,United States,310420,Cincinnati Bell Wireless,1,0.00550000
+US,United States,311150,Wilkes,1,0.00550000
+US,United States,311240,Cordova Wireless,1,0.00550000
+US,United States,311100,Nex-Tech Wireless,1,0.00550000
+US,United States,310430,GCI Cellular,1,0.00550000
+US,United States,316011,Southern LINC,1,0.00550000
+US,United States,310340,WestLink Communications,1,0.00550000
+US,United States,310960,UBET Wireless,1,0.00550000
+US,United States,310620,Trans Texas PCS,1,0.00550000
+US,United States,311520,Crossroads Wireless,1,0.00550000
+US,United States,310920,Get Mobile,1,0.00550000
+US,United States,311670,Pine Belt Wireless,1,0.00550000
+US,United States,311140,Sprocket Wireless,1,0.00550000
+US,United States,310820,Cellular One of Northeast Pennsylvania,1,0.00550000
+US,United States,311080,Pine Cellular,1,0.00550000
+US,United States,311660,metroPCS,1,0.00550000
+US,United States,311010,Chariton Valley Cellular,1,0.00550000
+US,United States,310030,Centennial Wireless,1,0.00550000
+US,United States,310130,Carolina West Wireless,1,0.00550000
+US,United States,311040,Commnet Wireless,1,0.00550000
+US,United States,310700,cv cellular,1,0.00550000
+US,United States,310031,T-Mobile,1,0.00550000
+US,United States,310600,Cellcom,1,0.00550000
+US,United States,311460,Fisher Wireless,1,0.00550000
+US,United States,311410,Chat Mobility,1,0.00550000
+US,United States,310630,AmeriLink PCS,1,0.00550000
+US,United States,311420,Northwest Missouri Cellular,1,0.00550000
+US,United States,311610,SRT Wireless,1,0.00550000
+US,United States,310930,Copper Valley Wireless,1,0.00550000
+US,United States,311210,Emery Telcom,1,0.00550000
+US,United States,310540,Oklahoma Western Telephone Company,1,0.00550000
+US,United States,312040,Custer Telephone Wireless,1,0.00550000
+US,United States,310080,Corr Wireless,1,0.00550000
+US,United States,310730,U.S. Cellular,1,0.00550000
+US,United States,311650,United Wireless,1,0.00550000
+US,United States,310120,"Sprint, Nextel",1,0.00550000
+US,United States,310690,Immix Wireless,1,0.00550000
+US,United States,311070,Element Mobile,1,0.00550000
+US,United States,311030,Indigo Wireless,1,0.00550000
+US,United States,310020,Union Cellular,1,0.00550000
+US,United States,311170,PetroCom,1,0.00550000
+US,United States,310320,Cellular One,1,0.00550000
+US,United States,311350,Nemont,1,0.00550000
+US,United States,310790,PinPoint Wireless,1,0.00550000
+US,United States,311500,Snake River PCS,1,0.00550000
+US,United States,310640,Einstein PCS,1,0.00550000
+US,United States,310450,Viaero Wireless,1,0.00550000
+US,United States,310360,Pioneer Cellular,1,0.00550000
+US,United States,311300,TSI,1,0.00550000
+US,United States,311590,Golden State Cellular,1,0.00550000
+US,United States,310016,Cricket,1,0.00550000
+US,United States,310090,Edge Wireless,1,0.00550000
+US,United States,310740,Telemetrix,1,0.00550000
+US,United States,310880,Advantage Cellular,1,0.00550000
+US,United States,310900,Mid-Rivers Wireless,1,0.00550000
+AF,Afghanistan,41220,Roshan,93,0.00560000
+AF,Afghanistan,41201,AWCC,93,0.00560000
+AF,Afghanistan,41240,MTN,93,0.00560000
+AF,Afghanistan,41250,Etisalat,93,0.00560000
+JM,Jamaica,338050,Digicel,1876,0.00560000
+JM,Jamaica,338180,LIME,1876,0.00560000
+MN,Mongolia,42888,Unitel,976,0.00560000
+MN,Mongolia,42801,Skytel,976,0.00560000
+MN,Mongolia,42899,MobiCom,976,0.00560000
+MN,Mongolia,42898,G-Mobile,976,0.00560000
+BI,Burundi,64203,ONAMOB,257,0.00600000
+BI,Burundi,64202,TEMPO,257,0.00600000
+BI,Burundi,64201,Econet,257,0.00600000
+BI,Burundi,64207,Smart Mobile,257,0.00600000
+BI,Burundi,64282,U-COM,257,0.00600000
+NG,Nigeria,62199,Starcomms,234,0.00600000
+NG,Nigeria,62160,Etisalat,234,0.00600000
+OM,Oman,42202,Oman Mobile,968,0.00600000
+OM,Oman,42203,Nawras,968,0.00600000
+IE,Ireland,27201,Vodafone,353,0.00660000
+IE,Ireland,27205,3 Ireland,353,0.00660000
+AG,Antigua and Barbuda,344920,LIME,1268,0.00700000
+AG,Antigua and Barbuda,34403,imobile,1268,0.00700000
+AG,Antigua and Barbuda,344930,Digicel,1268,0.00700000
+BD,Bangladesh,47004,Teletalk,880,0.00700000
+BD,Bangladesh,47003,Banglalink,880,0.00700000
+BD,Bangladesh,47005,Citycell,880,0.00700000
+BD,Bangladesh,47007,Airtel,880,0.00700000
+BD,Bangladesh,47001,GrameenPhone,880,0.00700000
+BD,Bangladesh,47002,Robi,880,0.00700000
+BB,Barbados,342050,Digicel,1246,0.00700000
+BB,Barbados,342600,LIME,1246,0.00700000
+BM,Bermuda,35002,M3,1441,0.00700000
+BM,Bermuda,35001,Digicel,1441,0.00700000
+BN,Brunei,52811,DSTCom,673,0.00700000
+BN,Brunei,52802,b-mobile,673,0.00700000
+KH,Cambodia,45603,S Telecom,855,0.00700000
+KH,Cambodia,45604,QB,855,0.00700000
+KH,Cambodia,45606,Smart Mobile,855,0.00700000
+KH,Cambodia,45608,Metfone,855,0.00700000
+KH,Cambodia,45618,Mfone,855,0.00700000
+KH,Cambodia,45609,Beeline,855,0.00700000
+KH,Cambodia,45601,"MobiTel, Cellcard",855,0.00700000
+KH,Cambodia,45602,hello,855,0.00700000
+KY,Cayman Islands,346140,LIME,1345,0.00700000
+KM,Comoros,65401,HURI,269,0.00700000
+CD,Democratic Republic of the Congo,63001,Vodacom,243,0.00700000
+CD,Democratic Republic of the Congo,63086,CCT,243,0.00700000
+GQ,Equatorial Guinea,62703,HiTs-GE,240,0.00700000
+GQ,Equatorial Guinea,62701,Orange GQ,240,0.00700000
+ER,Eritrea,65701,EriTel,291,0.00700000
+GH,Ghana,62006,Airtel,233,0.00700000
+GH,Ghana,62001,MTN,233,0.00700000
+GD,Grenada,352110,LIME,1473,0.00700000
+GD,Grenada,352050,Digicel,1473,0.00700000
+ID,Indonesia,51011,XL,62,0.00700000
+ID,Indonesia,51089,3,62,0.00700000
+ID,Indonesia,51021,Indosat IM3/StarOne,62,0.00700000
+ID,Indonesia,51099,Esia,62,0.00700000
+ID,Indonesia,51001,INDOSAT,62,0.00700000
+ID,Indonesia,51008,AXIS,62,0.00700000
+IR,Iran,43232,Taliya,98,0.00700000
+IR,Iran,43235,MTN Irancell,98,0.00700000
+IR,Iran,43219,MTCE,98,0.00700000
+IR,Iran,43214,TKC,98,0.00700000
+IR,Iran,43211,Iran Telecom,98,0.00700000
+KW,Kuwait,41903,Wataniya Telecom,965,0.00700000
+KW,Kuwait,41902,Zain,965,0.00700000
+KW,Kuwait,41904,VIVA,965,0.00700000
+LA,Laos,45708,Beeline,856,0.00700000
+LA,Laos,45702,ETL Mobile,856,0.00700000
+LT,Lithuania,24601,Omnitel,370,0.00700000
+LT,Lithuania,24602,Bite,370,0.00700000
+LT,Lithuania,24603,TELE2,370,0.00700000
+LU,Luxembourg,27001,LUXGSM,352,0.00700000
+LU,Luxembourg,27099,Orange,352,0.00700000
+LU,Luxembourg,27077,TANGO,352,0.00700000
+MW,Malawi,65010,Airtel,265,0.00700000
+MW,Malawi,65001,tnm,265,0.00700000
+MV,Maldives,47201,DhiMobile,960,0.00700000
+MV,Maldives,47202,Wataniya,960,0.00700000
+MU,Mauritius,61710,Emtel,230,0.00700000
+MU,Mauritius,61702,MTML Mobile,230,0.00700000
+MU,Mauritius,61701,Orange,230,0.00700000
+RU,Russia,25099,Beeline,7,0.00700000
+RU,Russia,25003,NCC,7,0.00700000
+RU,Russia,25016,NTC,7,0.00700000
+RU,Russia,25017,U-tel,7,0.00700000
+RU,Russia,25005,ETK,7,0.00700000
+RU,Russia,25007,SMARTS,7,0.00700000
+RU,Russia,25019,Altaysvyaz,7,0.00700000
+RU,Russia,25012,BaykalWestCom,7,0.00700000
+RU,Russia,25002,MegaFon,7,0.00700000
+RU,Russia,25020,TELE2,7,0.00700000
+RU,Russia,25001,MTS,7,0.00700000
+KN,Saint Kitts and Nevis,356050,Digicel,1869,0.00700000
+KN,Saint Kitts and Nevis,356110,LIME,1869,0.00700000
+LC,Saint Lucia,358110,LIME,1758,0.00700000
+LC,Saint Lucia,358050,Digicel,1758,0.00700000
+VC,Saint Vincent and The Grenadines,360050,Digicel,1784,0.00700000
+VC,Saint Vincent and The Grenadines,360110,LIME,1784,0.00700000
+SZ,Swaziland,65301,SwaziTelecom,268,0.00700000
+SZ,Swaziland,65310,Swazi MTN,268,0.00700000
+TZ,Tanzania,64008,BOL Mobile,255,0.00700000
+TZ,Tanzania,64009,HiTS,255,0.00700000
+TZ,Tanzania,64006,Sasatel,255,0.00700000
+TZ,Tanzania,64007,TTCL Mobile,255,0.00700000
+TZ,Tanzania,64004,Vodacom,255,0.00700000
+TZ,Tanzania,64011,Smile,255,0.00700000
+TZ,Tanzania,64002,Tigo,255,0.00700000
+TZ,Tanzania,64003,Zantel,255,0.00700000
+TN,Tunisia,60501,Orange,216,0.00700000
+TN,Tunisia,60502,Tuntel,216,0.00700000
+TN,Tunisia,60503,Tunisiana,216,0.00700000
+TC,Turks and Caicos Islands,376050,Digicel,1649,0.00700000
+TC,Turks and Caicos Islands,376352,IslandCom,1649,0.00700000
+TC,Turks and Caicos Islands,376350,LIME,1649,0.00700000
+UG,Uganda,64122,Warid Uganda,256,0.00700000
+UG,Uganda,64110,MTN,256,0.00700000
+UG,Uganda,64111,Mango,256,0.00700000
+UG,Uganda,64114,Orange,256,0.00700000
+UG,Uganda,64101,Airtel,256,0.00700000
+VN,Vietnam,45202,VinaPhone,84,0.00700000
+YE,Yemen,42103,Yemen Mobile,967,0.00700000
+YE,Yemen,42101,SabaFon GSM,967,0.00700000
+YE,Yemen,42102,Spacetel,967,0.00700000
+DZ,Algeria,60302,Djezzy,213,0.00750000
+CF,Central African Republic,62303,Orange,236,0.00750000
+CF,Central African Republic,62304,Nationlink,236,0.00750000
+CF,Central African Republic,62301,Moov,236,0.00750000
+CF,Central African Republic,62302,Telecel,236,0.00750000
+MO,Macau,45500,SmarTone,853,0.00750000
+MO,Macau,45501,CTM,853,0.00750000
+MO,Macau,45503,3,853,0.00750000
+MG,Madagascar,64604,Telma,261,0.00750000
+MG,Madagascar,64602,Orange,261,0.00750000
+MG,Madagascar,64601,Airtel,261,0.00750000
+MZ,Mozambique,64301,mCel,258,0.00750000
+MZ,Mozambique,64303,Movitel,258,0.00750000
+MZ,Mozambique,64304,Vodacom,258,0.00750000
+SC,Seychelles,63310,Airtel,248,0.00750000
+SC,Seychelles,63301,Cable & Wireless,248,0.00750000
+SC,Seychelles,63302,Smartcom,248,0.00750000
+IE,Ireland,27203,Meteor,353,0.00770000
+FJ,Fiji,54201,Vodafone,679,0.00800000
+FJ,Fiji,54202,Digicel,679,0.00800000
+GA,Gabon,62801,Libertis,241,0.00800000
+GA,Gabon,62802,Moov,241,0.00800000
+GA,Gabon,62803,Airtel,241,0.00800000
+IE,Ireland,27209,Clever Communications,353,0.00800000
+RW,Rwanda,63513,Tigo,250,0.00800000
+RW,Rwanda,63512,Rwandatel,250,0.00800000
+RW,Rwanda,63510,MTN Rwandacell,250,0.00800000
+TO,Tonga,53943,Digicel,676,0.00800000
+TO,Tonga,53901,U-Call,676,0.00800000
+ZW,Zimbabwe,64803,Telecel,263,0.00800000
+ZW,Zimbabwe,64804,Econet,263,0.00800000
+ZW,Zimbabwe,64801,Net*One,263,0.00800000
+BH,Bahrain,42605,Royal Court,973,0.00850000
+BH,Bahrain,42604,VIVA,973,0.00850000
+BH,Bahrain,42602,Zain,973,0.00850000
+BH,Bahrain,42601,Batelco,973,0.00850000
+CK,Cook Islands,54801,KokaNet,682,0.00850000
+DM,Dominica,366110,LIME,1767,0.00850000
+FI,Finland,24414,GSM Aland,358,0.00850000
+FI,Finland,24412,dna,358,0.00850000
+GM,Gambia,60704,QCELL,220,0.00850000
+GM,Gambia,60702,Africell,220,0.00850000
+GM,Gambia,60703,Comium,220,0.00850000
+GM,Gambia,60701,Gamcel,220,0.00850000
+IQ,Iraq,41840,Korek,964,0.00850000
+IQ,Iraq,41845,Mobitel,964,0.00850000
+IL,Israel,42503,Pelephone,972,0.00850000
+IL,Israel,42502,Cellcom,972,0.00850000
+IL,Israel,42501,Orange,972,0.00850000
+IL,Israel,42508,Golan Telecom,972,0.00850000
+IL,Israel,42507,HOT Mobile,972,0.00850000
+MS,Montserrat,354860,LIME,1664,0.00850000
+PG,Papua New Guinea,53703,Digicel,675,0.00850000
+PG,Papua New Guinea,53701,BeMobile,675,0.00850000
+PG,Papua New Guinea,53702,GreenCom,675,0.00850000
+TG,Togo,61503,Moov,228,0.00850000
+TG,Togo,61501,TogoCel,228,0.00850000
+KE,Kenya,63907,Orange,254,0.00880000
+KE,Kenya,63905,yu,254,0.00880000
+KE,Kenya,63902,Safaricom,254,0.00880000
+KE,Kenya,63903,Airtel,254,0.00880000
+LR,Liberia,61807,Cellcom,231,0.00900000
+ZM,Zambia,64503,"Zamtel, Cell Z",260,0.00900000
+ZM,Zambia,64501,Airtel,260,0.00900000
+ZM,Zambia,64502,MTN,260,0.00900000
+IQ,Iraq,41805,Asiacell,964,0.00950000
+GU,Guam,310370,DOCOMO PACIFIC,1671,0.01000000
+GU,Guam,311250,i CAN_GSM,1671,0.01000000
+NI,Nicaragua,71030,Movistar,505,0.01000000
+NI,Nicaragua,71021,Claro,505,0.01000000
+SG,Singapore,52505,StarHub,65,0.01000000
+SG,Singapore,52503,M1,65,0.01000000
+SG,Singapore,52501,SingTel,65,0.01000000
+SS,South Sudan,65995,Vivacell,211,0.01000000
+LK,Sri Lanka,41301,"Mobitel, M SAT",94,0.01000000
+LK,Sri Lanka,41305,Airtel,94,0.01000000
+LK,Sri Lanka,41303,Etisalat,94,0.01000000
+LK,Sri Lanka,41302,"Dialog GSM, Dialog SAT",94,0.01000000
+LK,Sri Lanka,41308,Hutch,94,0.01000000
+SD,Sudan,63402,MTN,249,0.01000000
+SD,Sudan,63401,Zain,249,0.01000000
+AL,Albania,27604,PLUS,355,0.01100000
+AL,Albania,27603,Eagle Mobile,355,0.01100000
+AL,Albania,27602,VODAFONE,355,0.01100000
+AL,Albania,27601,AMC MOBIL,355,0.01100000
+AD,Andorra,21303,Mobiland,376,0.01100000
+AO,Angola,63104,Movicel,244,0.01100000
+AO,Angola,63102,Unitel,244,0.01100000
+BZ,Belize,70267,DigiCell,501,0.01100000
+BA,Bosnia and Herzegovina,21805,m:tel,387,0.01100000
+BA,Bosnia and Herzegovina,21803,ERONET,387,0.01100000
+BA,Bosnia and Herzegovina,21890,BH Mobile,387,0.01100000
+CU,Cuba,36801,Cubacel,53,0.01100000
+DK,Denmark,23806,3,45,0.01100000
+DK,Denmark,23807,Vectone Mobile,45,0.01100000
+DK,Denmark,23801,TDC Mobil,45,0.01100000
+DK,Denmark,23820,Telia,45,0.01100000
+DK,Denmark,23802,Telenor,45,0.01100000
+DK,Denmark,23803,Mach Connectivity,45,0.01100000
+DK,Denmark,23812,Lycamobile,45,0.01100000
+DK,Denmark,23804,CardBoardFish,45,0.01100000
+DK,Denmark,23823,Banedanmark,45,0.01100000
+DK,Denmark,23828,CoolTEL,45,0.01100000
+FO,Faroe Islands,28801,Faroese Telecom,298,0.01100000
+FO,Faroe Islands,28803,Edge Mobile,298,0.01100000
+FO,Faroe Islands,28802,Vodafone,298,0.01100000
+GI,Gibraltar,26609,eazi telecom,350,0.01100000
+GI,Gibraltar,26606,CTS Mobile,350,0.01100000
+GI,Gibraltar,26601,Gibtel,350,0.01100000
+GL,Greenland,29001,TELE Greenland,299,0.01100000
+KZ,Kazakhstan,40177,Tele2.kz,7,0.01100000
+KZ,Kazakhstan,40101,Beeline,7,0.01100000
+MT,Malta,27877,Melita Mobile,356,0.01100000
+MT,Malta,27821,GO Mobile,356,0.01100000
+MT,Malta,27801,Vodafone,356,0.01100000
+ME,Montenegro,29702,T-Mobile,382,0.01100000
+ME,Montenegro,29703,m:tel,382,0.01100000
+ME,Montenegro,29701,Telenor,382,0.01100000
+PH,Philippines,51588,IMX,63,0.01100000
+PH,Philippines,51518,Red Mobile,63,0.01100000
+PH,Philippines,51505,Sun Cellular,63,0.01100000
+RS,Serbia,22005,Vip,381,0.01100000
+RS,Serbia,22001,Telenor,381,0.01100000
+RS,Serbia,22003,MTS,381,0.01100000
+SL,Sierra Leone,61901,Airtel,232,0.01100000
+SL,Sierra Leone,61940,Cellcom,232,0.01100000
+SL,Sierra Leone,61902,Tigo,232,0.01100000
+SL,Sierra Leone,61904,Comium,232,0.01100000
+SR,Suriname,74603,Digicel,597,0.01100000
+SR,Suriname,74604,UNIQA,597,0.01100000
+SR,Suriname,74602,TeleG,597,0.01100000
+TW,Taiwan,46692,Chunghwa Telecom,886,0.01100000
+TW,Taiwan,46601,Far EasTone,886,0.01100000
+TW,Taiwan,46689,VIBO,886,0.01100000
+TW,Taiwan,46697,Taiwan Mobile,886,0.01100000
+UZ,Uzbekistan,43402,MTS,998,0.01100000
+UZ,Uzbekistan,43401,Beeline,998,0.01100000
+UZ,Uzbekistan,43405,UCell,998,0.01100000
+VN,Vietnam,45207,GTEL Mobile,84,0.01100000
+VN,Vietnam,45205,Vietnamobile,84,0.01100000
+BW,Botswana,65202,Orange,267,0.01200000
+BW,Botswana,65201,Mascom,267,0.01200000
+BW,Botswana,65204,beMOBILE,267,0.01200000
+HT,Haiti,37202,Digicel,509,0.01200000
+HT,Haiti,37201,Voila',509,0.01200000
+IN,India,405878,Uninor - Orissa,91,0.01200000
+IN,India,40419,IDEA - Kerala,91,0.01200000
+IN,India,405879,Uninor - Uttar Pradesh (East),91,0.01200000
+IN,India,40518,Reliance - Punjab,91,0.01200000
+IN,India,40519,Reliance - Rajasthan,91,0.01200000
+IN,India,405880,Uninor - West Bengal,91,0.01200000
+IN,India,40421,Loop Mobile - Mumbai,91,0.01200000
+IN,India,40524,PING - Punjab,91,0.01200000
+IN,India,40420,Vodafone - Mumbai,91,0.01200000
+IN,India,40522,Reliance - Uttar Pradesh (West),91,0.01200000
+IN,India,40521,Reliance - Uttar Pradesh (East),91,0.01200000
+IN,India,40425,AIRCEL - Bihar,91,0.01200000
+IN,India,40520,Reliance - Tamil Nadu,91,0.01200000
+IN,India,40424,IDEA - Gujarat,91,0.01200000
+IN,India,40422,IDEA - Mumbai,91,0.01200000
+IN,India,40429,AIRCEL - Assam,91,0.01200000
+IN,India,405887,MTS - Andhra Pradesh,91,0.01200000
+IN,India,40428,AIRCEL - Orissa,91,0.01200000
+IN,India,40427,Vodafone - Maharashtra,91,0.01200000
+IN,India,405889,MTS - Bihar,91,0.01200000
+IN,India,40409,Reliance - Assam,91,0.01200000
+IN,India,40507,Reliance - Haryana,91,0.01200000
+IN,India,40509,Reliance - Jammu & Kashmir,91,0.01200000
+IN,India,40515,Reliance - Mumbai,91,0.01200000
+IN,India,40511,Reliance - Kerala,91,0.01200000
+IN,India,40510,Reliance - Karnataka,91,0.01200000
+IN,India,405891,MTS - Gujarat,91,0.01200000
+IN,India,40410,Airtel - Delhi,91,0.01200000
+IN,India,40513,Reliance - Maharashtra,91,0.01200000
+IN,India,405890,MTS - Delhi,91,0.01200000
+IN,India,405893,MTS - Himachal Pradesh,91,0.01200000
+IN,India,40412,IDEA - Haryana,91,0.01200000
+IN,India,405892,MTS - Haryana,91,0.01200000
+IN,India,40411,Vodafone - Delhi,91,0.01200000
+IN,India,405895,MTS - Karnataka,91,0.01200000
+IN,India,40414,IDEA - Punjab,91,0.01200000
+IN,India,405894,MTS - Jammu & Kashmir,91,0.01200000
+IN,India,40413,Vodafone - Andhra Pradesh,91,0.01200000
+IN,India,405897,MTS - Kolkata,91,0.01200000
+IN,India,40416,Airtel - North East,91,0.01200000
+IN,India,405896,MTS - Kerala,91,0.01200000
+IN,India,40415,Vodafone - Uttar Pradesh (East),91,0.01200000
+IN,India,405899,MTS - Maharashtra,91,0.01200000
+IN,India,405898,MTS - Madhya Pradesh,91,0.01200000
+IN,India,40417,AIRCEL - West Bengal,91,0.01200000
+IN,India,405858,Loop - Gujarat,91,0.01200000
+IN,India,405859,Loop - Haryana,91,0.01200000
+IN,India,405856,Loop - Bihar,91,0.01200000
+IN,India,405857,Loop - Delhi,91,0.01200000
+IN,India,40407,IDEA - Andhra Pradesh,91,0.01200000
+IN,India,405866,Loop - Maharashtra,91,0.01200000
+IN,India,40406,Airtel - Karnataka,91,0.01200000
+IN,India,405865,Loop - Madhya Pradesh,91,0.01200000
+IN,India,40405,Vodafone - Gujarat,91,0.01200000
+IN,India,405864,Loop - Kolkata,91,0.01200000
+IN,India,40404,IDEA - Delhi,91,0.01200000
+IN,India,405863,Loop - Kerala,91,0.01200000
+IN,India,40403,Airtel - Himachal Pradesh,91,0.01200000
+IN,India,405862,Loop - Karnataka,91,0.01200000
+IN,India,40402,Airtel - Punjab,91,0.01200000
+IN,India,405861,Loop - Jammu & Kashmir,91,0.01200000
+IN,India,40401,Vodafone - Haryana,91,0.01200000
+IN,India,405860,Loop - Himachal Pradesh,91,0.01200000
+IN,India,405867,Loop - North East,91,0.01200000
+IN,India,405868,Loop - Orissa,91,0.01200000
+IN,India,405869,Loop - Punjab,91,0.01200000
+IN,India,405875,Uninor - Assam,91,0.01200000
+IN,India,405874,Loop - West Bengal,91,0.01200000
+IN,India,405877,Uninor - North East,91,0.01200000
+IN,India,405876,Uninor - Bihar,91,0.01200000
+IN,India,405871,Loop - Tamil Nadu,91,0.01200000
+IN,India,405870,Loop - Rajasthan,91,0.01200000
+IN,India,405873,Loop - Uttar Pradesh (West),91,0.01200000
+IN,India,405872,Loop - Uttar Pradesh (East),91,0.01200000
+IN,India,40468,"Dolphin, Garuda - Delhi",91,0.01200000
+IN,India,40469,"Dolphin, Garuda - Mumbai",91,0.01200000
+IN,India,40466,BSNL Mobile - Maharashtrai,91,0.01200000
+IN,India,40460,Vodafone - Rajasthan,91,0.01200000
+IN,India,40464,BSNL Mobile - Chennai,91,0.01200000
+IN,India,40567,Vodafone - West Bengal,91,0.01200000
+IN,India,40462,BSNL Mobile - Jammu & Kashmir,91,0.01200000
+IN,India,40566,Vodafone - Uttar Pradesh (West),91,0.01200000
+IN,India,405754,Vodafone - Himachal Pradesh,91,0.01200000
+IN,India,405753,Vodafone - Orissa,91,0.01200000
+IN,India,405756,Vodafone - Madhya Pradesh,91,0.01200000
+IN,India,405755,Vodafone - North East,91,0.01200000
+IN,India,405750,Vodafone - Jammu & Kashmir,91,0.01200000
+IN,India,405751,Vodafone - Assam,91,0.01200000
+IN,India,40455,BSNL Mobile - Uttar Pradesh (East)i,91,0.01200000
+IN,India,40456,IDEA - Uttar Pradesh (West),91,0.01200000
+IN,India,40457,BSNL Mobile - Gujarati,91,0.01200000
+IN,India,40552,Airtel - Bihar,91,0.01200000
+IN,India,40458,BSNL Mobile - Madhya Pradeshi,91,0.01200000
+IN,India,40553,Airtel - Orissa,91,0.01200000
+IN,India,40459,BSNL Mobile - Rajasthani,91,0.01200000
+IN,India,40450,Reliance - North East,91,0.01200000
+IN,India,40451,Airtel - West Bengal,91,0.01200000
+IN,India,40554,Airtel - Uttar Pradesh (East),91,0.01200000
+IN,India,40555,Airtel - Jammu & Kashmir,91,0.01200000
+IN,India,40453,BSNL Mobile - Punjabi,91,0.01200000
+IN,India,40556,Airtel - Assam,91,0.01200000
+IN,India,40454,BSNL Mobile - Uttar Pradesh (West)i,91,0.01200000
+IN,India,40449,Airtel - Andhra Pradesh,91,0.01200000
+IN,India,40580,AIRCEL - Delhi,91,0.01200000
+IN,India,40446,Vodafone - Kerala,91,0.01200000
+IN,India,40444,IDEA - Karnataka,91,0.01200000
+IN,India,40442,AIRCEL - Tamil Nadu,91,0.01200000
+IN,India,40443,Vodafone - Tamil Nadu,91,0.01200000
+IN,India,40440,Airtel - Chennai,91,0.01200000
+IN,India,40441,AIRCEL - Chennai,91,0.01200000
+IN,India,40437,AIRCEL - Jammu & Kashmir,91,0.01200000
+IN,India,40438,BSNL Mobile - Assami,91,0.01200000
+IN,India,40570,IDEA - Bihar,91,0.01200000
+IN,India,40433,AIRCEL - North East,91,0.01200000
+IN,India,40434,BSNL Mobile - Haryanai,91,0.01200000
+IN,India,40435,AIRCEL - Himachal Pradesh,91,0.01200000
+IN,India,40575,Vodafone - Bihar,91,0.01200000
+IN,India,40430,Vodafone - Kolkata,91,0.01200000
+IN,India,40431,Airtel - Kolkata,91,0.01200000
+IN,India,40498,Airtel - Gujarat,91,0.01200000
+IN,India,405038,Tata DOCOMO - Madhya Pradesh,91,0.01200000
+IN,India,40497,Airtel - Uttar Pradesh (West),91,0.01200000
+IN,India,404881,S Tel - Assam,91,0.01200000
+IN,India,405039,Tata DOCOMO - Mumbai,91,0.01200000
+IN,India,40496,Airtel - Haryana,91,0.01200000
+IN,India,404882,S Tel - Bihar,91,0.01200000
+IN,India,40495,Airtel - Kerala,91,0.01200000
+IN,India,404883,S Tel - Himachal Pradesh,91,0.01200000
+IN,India,40494,Airtel - Tamil Nadu,91,0.01200000
+IN,India,404884,S Tel - Jammu & Kashmir,91,0.01200000
+IN,India,405034,Tata DOCOMO - Karnataka,91,0.01200000
+IN,India,40493,Airtel - Madhya Pradesh,91,0.01200000
+IN,India,404885,S Tel - North East,91,0.01200000
+IN,India,405035,Tata DOCOMO - Kerala,91,0.01200000
+IN,India,40492,Airtel - Mumbai,91,0.01200000
+IN,India,404886,S Tel - Orissa,91,0.01200000
+IN,India,405036,Tata DOCOMO - Kolkata,91,0.01200000
+IN,India,40491,AIRCEL - Kolkata,91,0.01200000
+IN,India,405037,Tata DOCOMO - Maharashtra,91,0.01200000
+IN,India,405030,Tata DOCOMO - Gujarat,91,0.01200000
+IN,India,405031,Tata DOCOMO - Haryana,91,0.01200000
+IN,India,405032,Tata DOCOMO - Himachal Pradesh,91,0.01200000
+IN,India,40490,Airtel - Maharashtra,91,0.01200000
+IN,India,405029,Tata DOCOMO - Delhi,91,0.01200000
+IN,India,405027,Tata DOCOMO - Bihar,91,0.01200000
+IN,India,405025,Tata DOCOMO - Andhra Pradesh,91,0.01200000
+IN,India,405906,MTS - Uttar Pradesh (West),91,0.01200000
+IN,India,405907,MTS - West Bengal,91,0.01200000
+IN,India,405904,MTS - Tamil Nadu,91,0.01200000
+IN,India,405905,MTS - Uttar Pradesh (East),91,0.01200000
+IN,India,405902,MTS - Orissa,91,0.01200000
+IN,India,405903,MTS - Punjab,91,0.01200000
+IN,India,405900,MTS - Mumbai,91,0.01200000
+IN,India,405901,MTS - North East,91,0.01200000
+IN,India,40472,BSNL Mobile - Keralai,91,0.01200000
+IN,India,40471,BSNL Mobile - Karnatakai,91,0.01200000
+IN,India,40470,Airtel - Rajasthan,91,0.01200000
+IN,India,40476,BSNL Mobile - Orissai,91,0.01200000
+IN,India,40475,BSNL Mobile - Bihari,91,0.01200000
+IN,India,40474,BSNL Mobile - West Bengali,91,0.01200000
+IN,India,405920,Cheers - Punjab,91,0.01200000
+IN,India,40473,BSNL Mobile - Andhra Pradeshi,91,0.01200000
+IN,India,40478,IDEA - Madhya Pradesh,91,0.01200000
+IN,India,40477,BSNL Mobile - North Easti,91,0.01200000
+IN,India,405919,Cheers - Mumbai,91,0.01200000
+IN,India,405913,Cheers - Delhi,91,0.01200000
+IN,India,405914,Cheers - Gujarat,91,0.01200000
+IN,India,405915,Cheers - Haryana,91,0.01200000
+IN,India,405916,Cheers - Karnataka,91,0.01200000
+IN,India,405917,Cheers - Kerala,91,0.01200000
+IN,India,405918,Cheers - Maharashtra,91,0.01200000
+IN,India,404853,IDEA - West Bengal,91,0.01200000
+IN,India,40481,BSNL Mobile - Kolkatai,91,0.01200000
+IN,India,405047,Tata DOCOMO - West Bengal,91,0.01200000
+IN,India,40480,BSNL Mobile - Tamil Nadui,91,0.01200000
+IN,India,405045,Tata DOCOMO - Uttar Pradesh (East),91,0.01200000
+IN,India,404852,IDEA - Tamil Nadu,91,0.01200000
+IN,India,40482,IDEA - Himachal Pradesh,91,0.01200000
+IN,India,405046,Tata DOCOMO - Uttar Pradesh (West),91,0.01200000
+IN,India,404850,IDEA - Orissa,91,0.01200000
+IN,India,40484,Vodafone - Chennai,91,0.01200000
+IN,India,40487,IDEA - Rajastan,91,0.01200000
+IN,India,40486,Vodafone - Karnataka,91,0.01200000
+IN,India,40489,IDEA - Uttar Pradesh (East),91,0.01200000
+IN,India,40488,Vodafone - Punjab,91,0.01200000
+IN,India,405043,Tata DOCOMO - Rajasthan,91,0.01200000
+IN,India,405044,Tata DOCOMO - Tamil Nadu,91,0.01200000
+IN,India,405041,Tata DOCOMO - Orissa,91,0.01200000
+IN,India,405042,Tata DOCOMO - Punjab,91,0.01200000
+IN,India,405924,Cheers - Uttar Pradesh (West),91,0.01200000
+IN,India,405925,Uninor - Tamil Nadu,91,0.01200000
+IN,India,405922,Cheers - Tamil Nadu,91,0.01200000
+IN,India,404849,IDEA - North East,91,0.01200000
+IN,India,405923,Cheers - Uttar Pradesh (East),91,0.01200000
+IN,India,404848,IDEA - Kolkata,91,0.01200000
+IN,India,405928,Uninor - Madhya Pradesh,91,0.01200000
+IN,India,405929,Uninor - Maharashtra,91,0.01200000
+IN,India,404846,IDEA - Jammu & Kashmir,91,0.01200000
+IN,India,405926,Uninor - Mumbai,91,0.01200000
+IN,India,404845,IDEA - Assam,91,0.01200000
+IN,India,405927,Uninor - Gujarat,91,0.01200000
+IN,India,405840,Videocon - Tamil Nadu,91,0.01200000
+IN,India,405841,Videocon - Uttar Pradesh (East),91,0.01200000
+IN,India,405842,Videocon - Uttar Pradesh (West),91,0.01200000
+IN,India,405843,Videocon - West Bengal,91,0.01200000
+IN,India,405844,Uninor - Delhi,91,0.01200000
+IN,India,405835,Videocon - Maharashtra,91,0.01200000
+IN,India,405834,Videocon - Madhya Pradesh,91,0.01200000
+IN,India,405837,Videocon - North East,91,0.01200000
+IN,India,405836,Videocon - Mumbai,91,0.01200000
+IN,India,405839,Videocon - Rajasthan,91,0.01200000
+IN,India,405838,Videocon - Orissa,91,0.01200000
+IN,India,405854,Loop - Andhra Pradesh,91,0.01200000
+IN,India,405855,Loop - Assam,91,0.01200000
+IN,India,405820,Uninor - Karnataka,91,0.01200000
+IN,India,405821,Uninor - Kerala,91,0.01200000
+IN,India,405822,Uninor - Kolkata,91,0.01200000
+IN,India,40501,Reliance - Andhra Pradesh,91,0.01200000
+IN,India,40505,Reliance - Delhi,91,0.01200000
+IN,India,40506,Reliance - Gujarat,91,0.01200000
+IN,India,405817,Uninor - Rajasthan,91,0.01200000
+IN,India,405816,Uninor - Punjab,91,0.01200000
+IN,India,405819,Uninor - Andhra Pradesh,91,0.01200000
+IN,India,405818,Uninor - Uttar Pradesh (West),91,0.01200000
+IN,India,405813,Uninor - Haryana,91,0.01200000
+IN,India,405815,Uninor - Jammu & Kashmir,91,0.01200000
+IN,India,405814,Uninor - Himachal Pradesh,91,0.01200000
+IN,India,405832,Videocon - Kerala,91,0.01200000
+IN,India,405833,Videocon - Kolkata,91,0.01200000
+IN,India,405830,Videocon - Jammu & Kashmir,91,0.01200000
+IN,India,405831,Videocon - Karnataka,91,0.01200000
+IN,India,405100,MTS - Rajasthan,91,0.01200000
+IN,India,405829,Videocon - Himachal Pradesh,91,0.01200000
+IN,India,405828,Videocon - Haryana,91,0.01200000
+IN,India,405827,Videocon - Gujarat,91,0.01200000
+IN,India,405826,Videocon - Delhi,91,0.01200000
+IN,India,405825,Videocon - Bihar,91,0.01200000
+IN,India,405824,Videocon - Assam,91,0.01200000
+IN,India,405823,Videocon - Andhra Pradesh,91,0.01200000
+MK,Macedonia,29403,Vip,389,0.01200000
+MK,Macedonia,29401,T-Mobile,389,0.01200000
+MK,Macedonia,29402,ONE,389,0.01200000
+NG,Nigeria,62150,Glo Mobile,234,0.01250000
+IQ,Iraq,41820,Zain,964,0.01300000
+RS,Serbia,29341,Mobitel,381,0.01300000
+SI,Slovenia,29364,T-2,386,0.01300000
+SI,Slovenia,29370,Tusmobil,386,0.01300000
+SI,Slovenia,29341,Mobitel,386,0.01300000
+MR,Mauritania,60901,Mattel,222,0.01450000
+MR,Mauritania,60910,"Mauritel Mobiles, El Jawal",222,0.01450000
+DJ,Djibouti,63801,Evatis,253,0.01500000
+GH,Ghana,62007,Glo,233,0.01500000
+IS,Iceland,27407,IceCell,354,0.01500000
+IS,Iceland,27401,Siminn,354,0.01500000
+IS,Iceland,27402,Og Vodafone,354,0.01500000
+IS,Iceland,27404,Viking Wireless,354,0.01500000
+IS,Iceland,27411,NOVA,354,0.01500000
+IS,Iceland,27409,Amitelo,354,0.01500000
+NG,Nigeria,62130,MTN,234,0.01500000
+PH,Philippines,51501,Globe,63,0.01500000
+TT,Trinidad and Tobago,374130,Digicel,1868,0.01500000
+TT,Trinidad and Tobago,37412,bmobile,1868,0.01500000
+LI,Liechtenstein,29502,Orange FL,423,0.01600000
+LI,Liechtenstein,29505,FL1,423,0.01600000
+LI,Liechtenstein,29501,FL GSM,423,0.01600000
+LI,Liechtenstein,29577,TANGO,423,0.01600000
+SV,El Salvador,70602,Digicel,503,0.01650000
+SV,El Salvador,70601,Claro,503,0.01650000
+SV,El Salvador,70603,Tigo,503,0.01650000
+SV,El Salvador,70604,Movistar,503,0.01650000
+SV,El Salvador,70605,RED,503,0.01650000
+ML,Mali,61001,Malitel,223,0.01700000
+ML,Mali,61002,Orange,223,0.01700000
+NC,New Caledonia,54601,Mobilis,687,0.01700000
+VN,Vietnam,45201,MobiFone,84,0.01700000
+GH,Ghana,62002,Vodafone,233,0.01800000
+GN,Guinea,61101,Orange,224,0.01800000
+GN,Guinea,61103,Intercel,224,0.01800000
+GN,Guinea,61105,Cellcom,224,0.01800000
+GN,Guinea,61104,MTN,224,0.01800000
+GH,Ghana,62004,Expresso,233,0.01980000
+AI,Anguilla,365840,LIME,1264,0.02000000
+AI,Anguilla,365010,Weblinks,1264,0.02000000
+AR,Argentina,722070,Movistar,54,0.02000000
+AW,Aruba,36302,Digicel,297,0.02000000
+AW,Aruba,36301,SETAR,297,0.02000000
+BS,Bahamas,36430,Cybercell,1242,0.02000000
+BO,Bolivia,73601,VIVA,591,0.02000000
+BO,Bolivia,73603,TIGO,591,0.02000000
+BO,Bolivia,73602,Entel Movil,591,0.02000000
+BF,Burkina Faso,61301,TELMOB,226,0.02000000
+BF,Burkina Faso,61302,Airtel,226,0.02000000
+BF,Burkina Faso,61303,telecel,226,0.02000000
+CR,Costa Rica,71204,Movistar,506,0.02000000
+CR,Costa Rica,71201,Kolbi,506,0.02000000
+CD,Democratic Republic of the Congo,63002,Airtel,243,0.02000000
+GE,Georgia,28204,Beeline,995,0.02000000
+GE,Georgia,28202,Magti,995,0.02000000
+GE,Georgia,28201,Geocell,995,0.02000000
+GH,Ghana,62003,Tigo,233,0.02000000
+ID,Indonesia,51007,Telkom Flexi,62,0.02000000
+JO,Jordan,41677,Orange,962,0.02000000
+JO,Jordan,41603,Umniah,962,0.02000000
+JO,Jordan,41601,Zain,962,0.02000000
+JO,Jordan,41602,XPress,962,0.02000000
+MY,Malaysia,502150,Tune Talk,60,0.02000000
+MY,Malaysia,50220,GoTa,60,0.02000000
+MY,Malaysia,50211,ATUR-450,60,0.02000000
+MY,Malaysia,502152,Yes,60,0.02000000
+MY,Malaysia,502151,Baraka Telecom,60,0.02000000
+MY,Malaysia,50212,Maxis,60,0.02000000
+MY,Malaysia,50218,U Mobile,60,0.02000000
+MY,Malaysia,50219,Celcom,60,0.02000000
+MY,Malaysia,50216,DiGi,60,0.02000000
+ZA,South Africa,65510,MTN,27,0.02000000
+ZA,South Africa,65501,Vodacom,27,0.02000000
+ZA,South Africa,65502,8ta (Heita),27,0.02000000
+ZA,South Africa,65507,Cell C,27,0.02000000
+SY,Syria,41701,Syriatel,963,0.02000000
+SY,Syria,41702,MTN,963,0.02000000
+TH,Thailand,52018,dtac,66,0.02000000
+TH,Thailand,52001,AIS,66,0.02000000
+TH,Thailand,52000,CAT CDMA,66,0.02000000
+TH,Thailand,52099,TrueMove,66,0.02000000
+TH,Thailand,52023,Digital Phone,66,0.02000000
+TH,Thailand,52015,"Thai Mobile, TOT3G",66,0.02000000
+AE,United Arab Emirates,42403,du,971,0.02000000
+AE,United Arab Emirates,42402,ETISALAT,971,0.02000000
+VN,Vietnam,45203,S-Fone,84,0.02000000
+VG,"Virgin Islands, British",348770,Digicel,1340,0.02000000
+VG,"Virgin Islands, British",348170,LIME,1340,0.02000000
+VG,"Virgin Islands, British",348570,CCT,1340,0.02000000
+LB,Lebanon,41503,mtc touch,961,0.02100000
+LB,Lebanon,41501,alfa,961,0.02100000
+SA,Saudi Arabia,42004,Zain,966,0.02100000
+SA,Saudi Arabia,42003,Mobily,966,0.02100000
+SA,Saudi Arabia,42001,Al Jawal,966,0.02100000
+TR,Turkey,28601,Turkcell,90,0.02100000
+TR,Turkey,28603,Avea,90,0.02100000
+TR,Turkey,28602,Vodafone Turkey,90,0.02100000
+AN,Netherlands Antilles,36294,Eutel,599,0.02200000
+AN,Netherlands Antilles,36269,Curacao Telecom,599,0.02200000
+AN,Netherlands Antilles,36202,East Caribbean Cell,599,0.02200000
+AN,Netherlands Antilles,36201,Setel (UTS),599,0.02200000
+AN,Netherlands Antilles,36251,TelCell,599,0.02200000
+AN,Netherlands Antilles,36281,Radcomm,599,0.02200000
+AN,Netherlands Antilles,36282,WindwardIslandCell,599,0.02200000
+SI,Slovenia,29340,SI.mobil - Vodafone,386,0.02400000
+SO,Somalia,63782,Telcom Mobile,252,0.02400000
+SO,Somalia,63730,Golis,252,0.02400000
+SO,Somalia,63704,Somafone,252,0.02400000
+SO,Somalia,63760,NationLink,252,0.02400000
+SO,Somalia,63701,Telesom,252,0.02400000
+SO,Somalia,63725,Hormuud,252,0.02400000
+CM,Cameroon,62401,MTN,237,0.02500000
+CM,Cameroon,62402,Orange,237,0.02500000
+CY,Cyprus,28020,PrimeTel Mobile,357,0.02500000
+CY,Cyprus,28010,MTN,357,0.02500000
+CY,Cyprus,28001,Cytamobile-Vodafone,357,0.02500000
+HN,Honduras,70830,HONDUTEL,504,0.02500000
+HN,Honduras,70801,Claro,504,0.02500000
+HN,Honduras,70802,Tigo,504,0.02500000
+IQ,Iraq,41862,Itisaluna,964,0.02500000
+LY,Libya,60600,Libyana,218,0.02500000
+LY,Libya,60601,Al Madar Mobiles,218,0.02500000
+NP,Nepal,42901,"Sky Phone, Nepal Telecom Mobile",977,0.02500000
+NP,Nepal,42902,Ncell,977,0.02500000
+VE,Venezuela,73401,Digitel,58,0.02500000
+VE,Venezuela,73406,Movilnet,58,0.02500000
+VE,Venezuela,73404,Movistar,58,0.02500000
+AR,Argentina,722020,Nextel,54,0.02700000
+SE,Sweden,24010,Spring Mobil,46,0.02700000
+SE,Sweden,24001,Telia,46,0.02700000
+SE,Sweden,24002,3,46,0.02700000
+SE,Sweden,24007,Tele2Comviq,46,0.02700000
+SE,Sweden,24008,Telenor,46,0.02700000
+KR,South Korea,45005,SK Telecom,82,0.02800000
+KR,South Korea,45006,U+,82,0.02800000
+KR,South Korea,45002,"KTF, KTFmagic n, Fimm",82,0.02800000
+HR,Croatia,21902,TELE2,385,0.02850000
+HR,Croatia,21910,VIPnet,385,0.02850000
+HR,Croatia,21901,T-Mobile,385,0.02850000
+HR,Croatia,21912,TELE FOCUS,385,0.02850000
+JE,Jersey,23455,C&W Jersey,44,0.02900000
+JE,Jersey,23403,Airtel Jersey,44,0.02900000
+NO,Norway,24208,TDC Mobil,47,0.02900000
+NO,Norway,24220,Jernbaneverket,47,0.02900000
+NO,Norway,24201,Telenor,47,0.02900000
+NO,Norway,24202,NetCom,47,0.02900000
+NO,Norway,24203,Teletopia Mobil,47,0.02900000
+NO,Norway,24204,Tele2 Mobil,47,0.02900000
+NO,Norway,24223,Lycamobile,47,0.02900000
+NO,Norway,24205,Network Norway,47,0.02900000
+NO,Norway,24207,Ventelo Mobil,47,0.02900000
+GB,United Kingdom,23422,Routo,44,0.02900000
+GB,United Kingdom,23420,3,44,0.02900000
+GB,United Kingdom,23409,Tismi,44,0.02900000
+GB,United Kingdom,23408,OnePhone,44,0.02900000
+GB,United Kingdom,23425,Tru,44,0.02900000
+GB,United Kingdom,23426,Lycamobile,44,0.02900000
+GB,United Kingdom,23423,Vectone mobile,44,0.02900000
+GB,United Kingdom,23424,Stour Marine,44,0.02900000
+GB,United Kingdom,23403,Airtel Jersey,44,0.02900000
+GB,United Kingdom,23427,Teleena,44,0.02900000
+GB,United Kingdom,23428,Marathon Telecom,44,0.02900000
+GB,United Kingdom,23400,BT Mobile,44,0.02900000
+GB,United Kingdom,23500,UK01,44,0.02900000
+GB,United Kingdom,23451,now broadband,44,0.02900000
+GB,United Kingdom,23430,"Orange, T-Mobile, EE",44,0.02900000
+GB,United Kingdom,23458,Pronto,44,0.02900000
+GB,United Kingdom,23433,Orange,44,0.02900000
+GB,United Kingdom,23417,FleXtel,44,0.02900000
+GB,United Kingdom,23416,TalkTalk Business,44,0.02900000
+GB,United Kingdom,23435,JSC Ingenium,44,0.02900000
+GB,United Kingdom,23419,PMN,44,0.02900000
+GB,United Kingdom,23455,C&W Jersey,44,0.02900000
+GB,United Kingdom,23418,Cloud9,44,0.02900000
+GB,United Kingdom,23437,Synectiv,44,0.02900000
+GB,United Kingdom,23415,Vodafone,44,0.02900000
+GB,United Kingdom,23414,HSL,44,0.02900000
+GB,United Kingdom,23410,O2,44,0.02900000
+BJ,Benin,61602,Moov,229,0.03000000
+BJ,Benin,61601,BT-Mobile,229,0.03000000
+BJ,Benin,61604,BBCOM,229,0.03000000
+BJ,Benin,61603,MTN,229,0.03000000
+BJ,Benin,61605,Glo Mobile Benin,229,0.03000000
+BT,Bhutan,40211,B-Mobile,975,0.03000000
+BT,Bhutan,40277,TashiCell,975,0.03000000
+EC,Ecuador,74002,Alegro,593,0.03000000
+EC,Ecuador,74001,Claro,593,0.03000000
+EC,Ecuador,74000,Movistar,593,0.03000000
+EG,Egypt,60203,Etisalat,20,0.03000000
+EG,Egypt,60202,Vodafone,20,0.03000000
+EG,Egypt,60201,Mobinil,20,0.03000000
+GT,Guatemala,70403,Movistar,502,0.03000000
+GT,Guatemala,70401,Claro,502,0.03000000
+GT,Guatemala,70402,"COMCEL, TIGO",502,0.03000000
+ID,Indonesia,51010,TELKOMSEL,62,0.03000000
+ID,Indonesia,51028,Mobile 8,62,0.03000000
+ID,Indonesia,51009,Smartfren,62,0.03000000
+PH,Philippines,51503,SMART,63,0.03000000
+QA,Qatar,42702,Vodafone,974,0.03000000
+QA,Qatar,42701,Qtel Mobile,974,0.03000000
+WS,Samoa,54900,Digicel,685,0.03000000
+TW,Taiwan,46656,FITEL,886,0.03000000
+KG,Kyrgyzstan,43701,Beeline,996,0.03200000
+KG,Kyrgyzstan,43705,MegaCom,996,0.03200000
+NA,Namibia,64902,Switch,264,0.03200000
+NA,Namibia,64901,MTC,264,0.03200000
+NA,Namibia,64903,leo,264,0.03200000
+CH,Switzerland,22853,upc cablecom,41,0.03300000
+CH,Switzerland,22854,Lycamobile,41,0.03300000
+CH,Switzerland,22851,BebbiCell,41,0.03300000
+CH,Switzerland,22852,Vectone Mobile,41,0.03300000
+CH,Switzerland,22802,sunrise,41,0.03300000
+CH,Switzerland,22803,Orange,41,0.03300000
+CH,Switzerland,22801,Swisscom,41,0.03300000
+CH,Switzerland,22805,Comfone,41,0.03300000
+PL,Poland,26017,aero2,48,0.03400000
+PL,Poland,26018,AMD Telecom,48,0.03400000
+PL,Poland,26016,Mobyland,48,0.03400000
+PL,Poland,26037,CardBoardFish,48,0.03400000
+PL,Poland,26019,Teleena,48,0.03400000
+PL,Poland,26038,CallFreedom,48,0.03400000
+PL,Poland,26009,Lycamobile,48,0.03400000
+PL,Poland,26008,e-Telko,48,0.03400000
+PL,Poland,26006,PLAY,48,0.03400000
+PL,Poland,26001,Plus,48,0.03400000
+PL,Poland,26002,T-Mobile,48,0.03400000
+PL,Poland,26003,Orange,48,0.03400000
+PL,Poland,26036,Vectone Mobile,48,0.03400000
+PL,Poland,26010,Sferia,48,0.03400000
+PL,Poland,26035,PKP,48,0.03400000
+PL,Poland,26032,Compatel,48,0.03400000
+PL,Poland,26012,Cyfrowy Polsat,48,0.03400000
+PL,Poland,26011,Nordisk Mobiltelefon,48,0.03400000
+AU,Australia,50501,Telstra MobileNet,61,0.03500000
+AU,Australia,50519,Lycamobile,61,0.03500000
+AU,Australia,50502,yes OPTUS,61,0.03500000
+AU,Australia,50503,"Vodafone, 3",61,0.03500000
+DO,Dominican Republic,37001,Orange,1809,0.03500000
+DO,Dominican Republic,37002,Claro,1809,0.03500000
+DO,Dominican Republic,37004,Viva,1809,0.03500000
+HK,Hong Kong,45400,CSL,852,0.03500000
+HK,Hong Kong,45411,CHKTL,852,0.03500000
+HK,Hong Kong,45404,Hutchison,852,0.03500000
+HK,Hong Kong,45412,China Mobile,852,0.03500000
+HK,Hong Kong,45401,CITIC 1616,852,0.03500000
+HK,Hong Kong,45408,Tru,852,0.03500000
+HK,Hong Kong,45416,PCCW mobile,852,0.03500000
+HK,Hong Kong,45407,China Unicom,852,0.03500000
+HK,Hong Kong,45406,SmarTone,852,0.03500000
+HK,Hong Kong,45409,China Motion,852,0.03500000
+JE,Jersey,23450,Jersey Telecom,44,0.03500000
+LV,Latvia,24709,camelmobile,371,0.03500000
+LV,Latvia,24708,IZZI,371,0.03500000
+LV,Latvia,24707,MTS GSM,371,0.03500000
+LV,Latvia,24706,Rigatta,371,0.03500000
+LV,Latvia,24705,Bite,371,0.03500000
+LV,Latvia,24703,TRIATEL,371,0.03500000
+LV,Latvia,24702,TELE2,371,0.03500000
+LV,Latvia,24701,LMT,371,0.03500000
+MX,Mexico,33404,UNEFON,52,0.03500000
+MX,Mexico,33405,IUSACELL,52,0.03500000
+MX,Mexico,33401,Nextel,52,0.03500000
+MX,Mexico,33402,TELCEL,52,0.03500000
+MX,Mexico,33403,MoviStar,52,0.03500000
+PL,Poland,26004,CenterNet mobile,48,0.03500000
+VN,Vietnam,45204,Viettel Mobile,84,0.03500000
+IE,Ireland,27211,Liffey Telecom,353,0.03630000
+IE,Ireland,27202,O2,353,0.03630000
+SE,Sweden,24012,Lycamobile,46,0.03850000
+SE,Sweden,24022,EUtel,46,0.03850000
+SE,Sweden,24023,Infobip,46,0.03850000
+SE,Sweden,24029,Mercury International,46,0.03850000
+SE,Sweden,24003,Net 1,46,0.03850000
+SE,Sweden,24028,CoolTEL,46,0.03850000
+SE,Sweden,24018,Minicall,46,0.03850000
+SE,Sweden,24017,Gotanet,46,0.03850000
+SE,Sweden,24025,Digitel Mobile,46,0.03850000
+SE,Sweden,24016,42 Telecom,46,0.03850000
+SE,Sweden,24027,MyIndian,46,0.03850000
+SE,Sweden,24014,TDC,46,0.03850000
+SE,Sweden,24013,Ventelo,46,0.03850000
+MA,Morocco,60402,inwi,212,0.03900000
+MA,Morocco,60401,IAM,212,0.03900000
+MA,Morocco,60400,Meditel,212,0.03900000
+CV,Cape Verde,62502,T+,238,0.04000000
+CV,Cape Verde,62501,CVMovel,238,0.04000000
+CL,Chile,73011,Celupago,56,0.04000000
+CL,Chile,73002,Movistar,56,0.04000000
+CL,Chile,73012,TELESTAR,56,0.04000000
+CL,Chile,73003,Claro,56,0.04000000
+CL,Chile,73013,Virgin Mobile,56,0.04000000
+CL,Chile,73014,Netline,56,0.04000000
+CL,Chile,73001,Entel,56,0.04000000
+CL,Chile,73008,VTR,56,0.04000000
+CL,Chile,73006,INNET,56,0.04000000
+CL,Chile,73004,Nextel,56,0.04000000
+GY,Guyana,73801,Digicel,592,0.04000000
+GY,Guyana,73802,Cellink,592,0.04000000
+PE,Peru,71606,MoviStar,51,0.04000000
+PE,Peru,71607,Nextel,51,0.04000000
+PE,Peru,71610,Claro,51,0.04000000
+RO,Romania,22603,Cosmote Romania,40,0.04000000
+RO,Romania,22605,DigiMobil,40,0.04000000
+RO,Romania,22610,Orange,40,0.04000000
+RO,Romania,22604,Zapp mobile,40,0.04000000
+RO,Romania,22601,Vodafone,40,0.04000000
+SE,Sweden,24009,djuice,46,0.04000000
+UY,Uruguay,74807,Movistar,598,0.04000000
+UY,Uruguay,74810,Claro,598,0.04000000
+UY,Uruguay,74801,Antel Movil,598,0.04000000
+AM,Armenia,28310,Orange,374,0.04400000
+AM,Armenia,28305,VivaCell-MTS,374,0.04400000
+AM,Armenia,28301,Beeline,374,0.04400000
+AZ,Azerbaijan,40002,Bakcell,994,0.04400000
+AZ,Azerbaijan,40001,Azercell,994,0.04400000
+AZ,Azerbaijan,40004,Nar Mobile,994,0.04400000
+CD,Democratic Republic of the Congo,63089,Tigo,243,0.04500000
+TL,East Timor,51402,Timor Telecom,670,0.04500000
+TL,East Timor,51401,Telkomcel,670,0.04500000
+FI,Finland,24491,"sonera, TeleFinland",358,0.04500000
+FR,France,20823,OMEA(Virgin),33,0.04500000
+FR,France,20810,SFR,33,0.04500000
+FR,France,20820,Bouygues Telecom,33,0.04500000
+FR,France,20801,Orange,33,0.04500000
+FR,France,20815,Free,33,0.04500000
+MO,Macau,45502,China Telecom,853,0.04500000
+PT,Portugal,26803,Optimus,351,0.04500000
+PT,Portugal,26801,Vodafone,351,0.04500000
+PT,Portugal,26806,TMN,351,0.04500000
+SN,Senegal,60801,Orange,221,0.04500000
+SN,Senegal,60802,Tigo,221,0.04500000
+SN,Senegal,60803,Expresso,221,0.04500000
+SK,Slovakia,23106,O2,421,0.04500000
+SK,Slovakia,23101,Orange,421,0.04500000
+SK,Slovakia,23199,ZSR,421,0.04500000
+SK,Slovakia,23102,T-Mobile,421,0.04500000
+CZ,Czech Republic,23005,Eureka,420,0.05
+CZ,Czech Republic,23008,Compatel,420,0.05
+FI,Finland,24411,Vectone Mobile,358,0.05
+FI,Finland,24409,Nokia,358,0.05
+ID,Indonesia,51027,Ceria,62,0.05
+MD,Moldova,25904,Eventis,373,0.05
+KP,North Korea,46703,Sun Net,850,0.05
+PM,Saint Pierre and Miquelon,30801,Ameris,508,0.05
+SM,San Marino,29201,TIM San Marino,378,0.05
+UA,Ukraine,25504,IT,380,0.05
+BG,Bulgaria,28401,M-Tel,359,0.05000000
+BG,Bulgaria,28405,GloBul,359,0.05000000
+BG,Bulgaria,28403,VIVACOM,359,0.05000000
+CN,China,46001,China Unicom,86,0.05000000
+CN,China,46000,China Mobile,86,0.05000000
+CN,China,46003,China Telecom,86,0.05000000
+CZ,Czech Republic,23002,O2,420,0.05000000
+CZ,Czech Republic,23001,T-Mobile,420,0.05000000
+CZ,Czech Republic,23004,U:fon,420,0.05000000
+CZ,Czech Republic,23003,Vodafone,420,0.05000000
+EE,Estonia,24801,EMT,372,0.05000000
+EE,Estonia,24802,elisa,372,0.05000000
+EE,Estonia,24803,Tele2.mobiil,372,0.05000000
+FI,Finland,24405,elisa,358,0.05000000
+GR,Greece,20209,WIND,30,0.05000000
+GR,Greece,20205,Vodafone,30,0.05000000
+GR,Greece,20201,COSMOTE,30,0.05000000
+JP,Japan,44010,NTT DoCoMo,81,0.05000000
+JP,Japan,44020,SoftBank,81,0.05000000
+JP,Japan,44078,Okinawa Cellular,81,0.05000000
+JP,Japan,44000,eMobile,81,0.05000000
+JP,Japan,44007,au KDDI,81,0.05000000
+MD,Moldova,25903,Unite',373,0.05000000
+MD,Moldova,25902,Moldcell,373,0.05000000
+MD,Moldova,25901,Orange,373,0.05000000
+NE,Niger,61401,SahelCom,227,0.05000000
+NE,Niger,61402,Airtel,227,0.05000000
+NE,Niger,61403,Moov,227,0.05000000
+NE,Niger,61404,Orange,227,0.05000000
+PA,Panama,71401,+Movil,507,0.05000000
+TW,Taiwan,46605,QMA,886,0.05000000
+TM,Turkmenistan,43801,MTS,993,0.05000000
+TM,Turkmenistan,43802,TM-Cell,993,0.05000000
+UA,Ukraine,25521,PEOPLEnet,380,0.05000000
+UA,Ukraine,25501,MTS,380,0.05000000
+UA,Ukraine,25502,Beeline,380,0.05000000
+UA,Ukraine,25506,life:),380,0.05000000
+UA,Ukraine,25507,3Mob,380,0.05000000
+VU,Vanuatu,54101,Smile,678,0.05000000
+VU,Vanuatu,54105,Digicel,678,0.05000000
+NL,Netherlands,20423,ASPIDER Solutions,31,0.05200000
+NL,Netherlands,20408,KPN,31,0.05200000
+NL,Netherlands,20409,Lycamobile,31,0.05200000
+NL,Netherlands,20414,6GMOBILE,31,0.05200000
+NL,Netherlands,20406,Vectone Mobile,31,0.05200000
+NL,Netherlands,20407,Teleena,31,0.05200000
+NL,Netherlands,20416,T-Mobile NL,31,0.05200000
+NL,Netherlands,20404,Vodafone,31,0.05200000
+NL,Netherlands,20417,Intercity Zakelijk,31,0.05200000
+NL,Netherlands,20418,UPC Mobile,31,0.05200000
+NL,Netherlands,20405,ElephantTalk,31,0.05200000
+NL,Netherlands,20428,Lancelot,31,0.05200000
+NL,Netherlands,20402,Tele2 Mobiel,31,0.05200000
+NL,Netherlands,20403,Voiceworks Mobile,31,0.05200000
+AR,Argentina,722310,Claro,54,0.05300000
+AT,Austria,23205,Orange,43,0.05300000
+AT,Austria,23203,T-Mobile,43,0.05300000
+AT,Austria,23210,3,43,0.05300000
+AT,Austria,23201,"A1, A1-3G",43,0.05300000
+DZ,Algeria,60301,Mobilis,213,0.05500000
+BY,Belarus,25702,MTS,375,0.05500000
+BY,Belarus,25701,"VELCOM, Globalstar",375,0.05500000
+BY,Belarus,25704,life:),375,0.05500000
+BR,Brazil,72416,Oi Movel,55,0.05500000
+BR,Brazil,72432,CTBC,55,0.05500000
+BR,Brazil,72415,SERCOMTEL,55,0.05500000
+BR,Brazil,72437,aeiou,55,0.05500000
+BR,Brazil,72400,Nextel,55,0.05500000
+BR,Brazil,72402,TIM,55,0.05500000
+BR,Brazil,72406,Vivo,55,0.05500000
+BR,Brazil,72405,Claro,55,0.05500000
+DE,Germany,26207,O2 Viag,49,0.05500000
+DE,Germany,26203,E-Plus,49,0.05500000
+DE,Germany,26202,Vodafone,49,0.05500000
+DE,Germany,26214,Quam,49,0.05500000
+DE,Germany,26216,Vistream,49,0.05500000
+DE,Germany,26201,Telekom,49,0.05500000
+KZ,Kazakhstan,40102,Kcell,7,0.05500000
+PA,Panama,71404,Digicel,507,0.05500000
+PA,Panama,71403,Claro,507,0.05500000
+PA,Panama,71402,Movistar,507,0.05500000
+CG,Republic Of The Congo,62907,Warid,242,0.05500000
+CG,Republic Of The Congo,62901,Airtel,242,0.05500000
+CG,Republic Of The Congo,62910,MTN,242,0.05500000
+SE,Sweden,24011,Lindholmen Science Park,46,0.05500000
+IT,Italy,22288,WIND,39,0.05600000
+IT,Italy,22210,Vodafone,39,0.05600000
+IT,Italy,22207,Noverca,39,0.05600000
+IT,Italy,22208,Fastweb Mobile,39,0.05600000
+IT,Italy,22230,RFI,39,0.05600000
+IT,Italy,22299,3,39,0.05600000
+IT,Italy,22201,TIM,39,0.05600000
+MC,Monaco,21201,Monaco Telecom,377,0.05700000
+LR,Liberia,61801,MTN,231,0.05800000
+LR,Liberia,61804,Comium,231,0.05800000
+DZ,Algeria,60303,Nedjma,213,0.05830000
+AR,Argentina,722341,Personal,54,0.06000000
+BE,Belgium,20601,PROXIMUS,32,0.06000000
+BE,Belgium,20605,Telenet Mobile,32,0.06000000
+BE,Belgium,20610,Mobistar,32,0.06000000
+BE,Belgium,20620,BASE,32,0.06000000
+CO,Colombia,732130,Avantel,57,0.06000000
+CO,Colombia,732154,Virgin,57,0.06000000
+CO,Colombia,732123,Movistar,57,0.06000000
+CO,Colombia,732101,COMCEL,57,0.06000000
+CO,Colombia,732020,UNE,57,0.06000000
+CO,Colombia,732111,Tigo,57,0.06000000
+CD,Democratic Republic of the Congo,63005,Supercell,243,0.06000000
+HU,Hungary,21630,T-Mobile,36,0.06000000
+HU,Hungary,21670,Vodafone,36,0.06000000
+HU,Hungary,21601,Telenor,36,0.06000000
+NZ,New Zealand,53024,2degrees,64,0.06000000
+NZ,New Zealand,53002,XT,64,0.06000000
+NZ,New Zealand,53004,TelstraClear,64,0.06000000
+NZ,New Zealand,53001,Vodafone,64,0.06000000
+PS,Palestinian Territory,42506,Wataniya,970,0.06000000
+PS,Palestinian Territory,42505,Jawwal,970,0.06000000
+ST,Sao Tome and Principe,62601,CSTmovel,239,0.06000000
+ES,Spain,21407,Movistar,34,0.06000000
+ES,Spain,21408,Euskaltel Movil,34,0.06000000
+ES,Spain,21418,ONO io,34,0.06000000
+ES,Spain,21419,Simyo,34,0.06000000
+ES,Spain,21403,Orange,34,0.06000000
+ES,Spain,21416,TeleCable,34,0.06000000
+ES,Spain,21404,Yoigo,34,0.06000000
+ES,Spain,21417,R Spain,34,0.06000000
+ES,Spain,21415,BT Spain,34,0.06000000
+ES,Spain,21401,Vodafone,34,0.06000000
+ES,Spain,21421,Jazztel,34,0.06000000
+ES,Spain,21423,Vectone Movil,34,0.06000000
+CI,Ivory Coast,61202,Moov,225,0.07000000
+CI,Ivory Coast,61204,KoZ,225,0.07000000
+CI,Ivory Coast,61203,Orange,225,0.07000000
+CI,Ivory Coast,61205,MTN,225,0.07000000
+CI,Ivory Coast,61207,cafe',225,0.07000000
+LA,Laos,45703,Unitel,856,0.07500000
+LA,Laos,45701,LTC,856,0.07500000
+NG,Nigeria,62101,Multi-links,234,0.07500000
+NG,Nigeria,62120,Airtel,234,0.07500000
+GP,Guadeloupe,34020,Digicel,590,0.08000000
+GP,Guadeloupe,34008,Amigo,590,0.08000000
+GP,Guadeloupe,34001,Orange,590,0.08000000
+GP,Guadeloupe,34002,only,590,0.08000000
+GP,Guadeloupe,34003,TelCell,590,0.08000000
+MQ,Martinique,34020,Digicel,596,0.08000000
+MQ,Martinique,34001,Orange,596,0.08000000
+MQ,Martinique,34002,only,596,0.08000000
+MQ,Martinique,34003,TelCell,596,0.08000000
+GF,French Guiana,74220,Bouygues Caraibe,594,0.09500000
+GF,French Guiana,74201,Orange Caribe,594,0.09500000
+PF,French Polynesia,54720,Tikiphone,689,0.10200000
+RE,Réunion Island,64710,SFR Reunion,262,0.10710000
+RE,Réunion Island,64702,Outremer Tel Reunion,262,0.10710000
