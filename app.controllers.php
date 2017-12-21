@@ -155,6 +155,32 @@ function at_get_cart_data(){
    echo json_encode($cart); //$_SESSION['userCart'] = array();  //Reset
 }
 
+function at_get_history(){
+	global $wpdb;
+	$current_user = wp_get_current_user();
+	$user_ID = $current_user->ID;
+  	
+	$M = $wpdb->get_results(sprintf("select * from nic_domains where domain_owner='%s'  order by domain_name desc",
+$user_ID), ARRAY_A);
+
+if(current_user_can( 'manage_options' ))
+
+$M = $wpdb->get_results(sprintf("select * from nic_domains order by domain_name desc"), ARRAY_A); 
+
+$N = array();
+
+   foreach($M as $key => $domain){
+      if($domain['active'] == 1) $domain["status"] = 'Active'; //__('Actif', 'domain-manager');
+      else if ($domain['active'] == 0) $domain["status"] = 'Pendding'; //__('En attente', 'domain-manager');
+
+      // Add status expiring here
+
+      array_push($N, $domain);
+   } /**/
+
+   echo json_encode($N);
+}
+
 function at_save_command(){
 
    global $wpdb;
@@ -169,7 +195,7 @@ function at_save_command(){
    $cart = array();
    if(isset($_SESSION['userCart'])) $cart = $_SESSION['userCart'];
 
-   foreach($cart as $key => $domain){
+  /* foreach($cart as $key => $domain){
       $wpdb->insert('nic_domains', 
 	array( 	'domain_owner' => $current_user->ID, 
 		'domain_name' => $domain['name'],
@@ -181,7 +207,7 @@ function at_save_command(){
 
    //Potential transaction
 
-   /*$wpdb->insert('nic_mobile_payements', 
+   $wpdb->insert('nic_mobile_payements', 
 	array( 	'domain_owner' => $current_user->ID, 
 		'domain_name' => $domain['name'],
 		'domain_creation_date' => date("Y-m-d H:i:s"),

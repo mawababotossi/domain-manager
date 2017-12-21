@@ -43,6 +43,7 @@ function at_add_scripts(){
 	$siteurl = get_option('siteurl');
 	$url = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__));
 	echo "<link rel='stylesheet' type='text/css' href='$url/css/woocommerce-custom.css' />";
+        echo "<link rel='stylesheet' type='text/css' href='$url/css/bootstrap-custom.css' />";
         echo "<script type='text/javascript' src='$url/js/jquery.js'></script>";
 	echo "<script type='text/javascript' src='$url/js/angular.js'></script>";
 	echo "<script type='text/javascript' src='$url/js/angular-route.js'></script>";
@@ -159,7 +160,7 @@ function at_show_user_balance(){
 }
 
 function at_language_init() {
-       load_plugin_textdomain( 'active-texto', false, basename( dirname( __FILE__ ) ) . '/lang' );
+       load_plugin_textdomain( 'domain-manager', false, basename( dirname( __FILE__ ) ) . '/lang' );
 }
 
 
@@ -238,11 +239,11 @@ function username_or_email_login() {
 	?><script type="text/javascript">
 	// Form Label
 	if ( document.getElementById('loginform') )
-		document.getElementById('loginform').childNodes[1].childNodes[1].childNodes[0].nodeValue = '<?php echo esc_js( __( 'Téléphone ou Email', 'active-texto' ) ); ?>';
+		document.getElementById('loginform').childNodes[1].childNodes[1].childNodes[0].nodeValue = '<?php echo esc_js( __( 'Téléphone ou Email', 'domain-manager' ) ); ?>';
 
 	// Error Messages
 	if ( document.getElementById('login_error') )
-		document.getElementById('login_error').innerHTML = document.getElementById('login_error').innerHTML.replace( '<?php echo esc_js( __( 'identifiant' ) ); ?>', '<?php echo esc_js( __( 'Téléphone ou Email' , 'active-texto' ) ); ?>' );
+		document.getElementById('login_error').innerHTML = document.getElementById('login_error').innerHTML.replace( '<?php echo esc_js( __( 'identifiant' ) ); ?>', '<?php echo esc_js( __( 'Téléphone ou Email' , 'domain-manager' ) ); ?>' );
 	</script><?php
 }
 add_action( 'login_form', 'username_or_email_login' );
@@ -250,14 +251,14 @@ add_action( 'login_form', 'username_or_email_login' );
 
 function at_set_page_title(){
 	@session_start();
-	if(isset($_GET['register'])){$_SESSION['at_dashboard_page_title'] = __('Enrégistrer un domaine', 'active-texto'); }
-	else if(isset($_GET['signup'])){$_SESSION['at_dashboard_page_title'] = __('Inscription', 'active-texto'); }
-	else if(isset($_GET['contacts'])){$_SESSION['at_dashboard_page_title'] = __('Contacts', 'active_texto');}
-	else if(isset($_GET['doamains'])){$_SESSION['at_dashboard_page_title'] = __('Historique', 'active-texto');}
-	else if(isset($_GET['groups'])){$_SESSION['at_dashboard_page_title'] = __('Groupes', 'active-texto');}
-	else if(isset($_GET['reports'])){$_SESSION['at_dashboard_page_title'] = __('Rapports', 'active-texto');}
-	else if(isset($_GET['scheduled'])){$_SESSION['at_dashboard_page_title'] = __('Envois différés', 'active-texto');}
-	else{$_SESSION['at_dashboard_page_title'] = __("Vos noms de domaines",'active-texto');}
+	if(isset($_GET['register'])){$_SESSION['at_dashboard_page_title'] = __('Enrégistrer un domaine', 'domain-manager'); }
+	else if(isset($_GET['signup'])){$_SESSION['at_dashboard_page_title'] = __('Inscription', 'domain-manager'); }
+	else if(isset($_GET['contacts'])){$_SESSION['at_dashboard_page_title'] = __('Contacts', 'domain-manager');}
+	else if(isset($_GET['doamains'])){$_SESSION['at_dashboard_page_title'] = __('Historique', 'domain-manager');}
+	else if(isset($_GET['groups'])){$_SESSION['at_dashboard_page_title'] = __('Groupes', 'domain-manager');}
+	else if(isset($_GET['reports'])){$_SESSION['at_dashboard_page_title'] = __('Rapports', 'domain-manager');}
+	else if(isset($_GET['scheduled'])){$_SESSION['at_dashboard_page_title'] = __('Envois différés', 'domain-manager');}
+	else{$_SESSION['at_dashboard_page_title'] = __("Vos noms de domaines",'domain-manager');}
 }
 
 function manager_shortcode() {

@@ -35,7 +35,7 @@ ob_start();
             <div class="row">
                <div class="col-md-12 content-header">
                   <h1 class="pull-left"><?php _e('Mes domaines', 'active-texto'); ?></h1>
-                  <a href="#/register" class="btn btn-primary pull-right new">
+                  <a href="<?php echo site_url(); ?>/search" class="btn btn-primary pull-right new">
                      <i class="icon-budicon-473_"></i><?php _e('Enrégistrer un domaine', 'manager'); ?>
                   </a>
                </div>
@@ -49,7 +49,7 @@ ob_start();
                <!-- History Box widget -->
                <div class="col-md-12 loaded">
 	          <div class="widget-content" ng-show="!loading">
-                     <table id="reports" class="table table-condensed table-striped table-bordered" style="">
+                     <table id="reports" class="table table-condensed table-striped" style="">
                         <thead>
                            <tr>
                               <th width="50">#</th>
@@ -77,7 +77,7 @@ ob_start();
                                  </span>
                               </td>
                               <td>{{domain.domain_expiry_date | cut:true:10:' '}}</td>
-                              <td>{{domain.status}}</td>
+                              <td><span class="label" ng-class="{Active:'label-success', Pendding:'label-warning'}[domain.status]"> {{domain.status}} </span></td>
                               </td>
                               
                            </tr>
