@@ -163,7 +163,7 @@ ob_start();
                               <th width="70"><?php _e('Type', 'manager'); ?></th>
                               <th><?php _e('Hostname', 'manager'); ?></th>
                               <th><?php _e('Value', 'manager'); ?></th>
-                              <th width="120" align="right"><?php _e('TTL', 'manager'); ?></th>
+                              <th align="right" width="120"><?php _e('TTL', 'manager'); ?></th>
                               <th width="100"></th>
                            </tr>
                         </thead>
@@ -322,10 +322,6 @@ ob_start();
 	    </div>
          </section>
 
-
-	
-         
-                
          <section id="api" class="content-page" ng-if="isAPI" ng-class="{'current': isAPI == 1}">
             <div class="row">
                <div class="col-md-12 content-header">

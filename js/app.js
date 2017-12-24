@@ -14,7 +14,7 @@ angular.module('app', ["app.http",'app.ctrls', 'ui.bootstrap','app.chart.directi
 angular.module('app.http', [], function($httpProvider) {
   // Use x-www-form-urlencoded Content-Type
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
-  $httpProvider.defaults.headers.common['Authorization'] = "Bearer 6bcb6df4308364d52f491b8edcae1430f10ac185ed2f1dc02e590e540be8309c"; //Absolutly insecure
+  $httpProvider.defaults.headers.common['Authorization'] = "Bearer #doapikey#"; //Absolutly insecure
  
   /**
    * The workhorse; converts an object to x-www-form-urlencoded serialization.
