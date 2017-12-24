@@ -5,6 +5,13 @@ Description: Make Me Registrar.
 Version: 1.0
 Author: Botossi Mawaba
 */
+
+// Make sure WooCommerce is active
+if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+	return;
+}
+
+
 include_once(dirname(__FILE__).'/lib/utils.php');
 
 include_once(dirname(__FILE__).'/app.controllers.php');

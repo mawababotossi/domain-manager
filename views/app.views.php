@@ -34,7 +34,7 @@ ob_start();
          <section ng-controller="historyCtrl" id="dashboard" class="content-page" ng-if="isDomains" ng-class="{'current': isDomains == 1}">
             <div class="row">
                <div class="col-md-12 content-header">
-                  <h1 class="pull-left"><?php _e('Mes domaines', 'active-texto'); ?></h1>
+                  <h1 class="pull-left"><?php _e('Mes domaines', 'domain-manager'); ?></h1>
                   <a href="<?php echo site_url(); ?>/search" class="btn btn-primary pull-right new">
                      <i class="icon-budicon-473_"></i><?php _e('Enrégistrer un domaine', 'manager'); ?>
                   </a>
@@ -54,32 +54,42 @@ ob_start();
                            <tr>
                               <th width="50">#</th>
                               <th>Domain</th>
-                              <th width="200"><?php _e("Actions", "active-texto"); ?></th>
-                              <th width="120"><?php _e("Expiration", "active-texto"); ?></th>
-                              <th style="text-align:right" width="127"><?php _e("Statut", "active-texto"); ?></th>
+                              <th width="200"><?php _e("Actions", "domain-manager"); ?></th>
+                              <th><?php _e("Enrégistrement", "domain-manager"); ?></th>
+                              <th><?php _e("Expiration", "domain-manager"); ?></th>
+                              <th style="text-align:left" width="127"><?php _e("Statut", "domain-manager"); ?></th>
                            </tr>
                         </thead>
                         <tbody>
-                           <tr data-ng-repeat="domain in currentPageDomains" 
-                               ng-click="showDetails(campaign.OutgoingGroupId)" 
-                               title="click to see details"
-                               style="cursor:pointer"
+                           <tr data-ng-repeat="domain in currentPageDomains"
                              ><td>{{domains.length - $index - numPerPage*(currentPage-1)}}</td>
                               <td>{{domain.domain_name| cut:true:50:'...'}}</td>
-                              <td style="text-align:right">
-                                 <span showonparenthover_>
-                                    <span class="actions" style="cursor:pointer" 
-                                       ng-click="useAsModel(campaign.OutgoingGroupId)"
-                                       title = "Utiliser ceci comme modèle pour un nouveau message"
+                              <td style="text-align:left">
+                                 <span showonparenthover_ ng-if="domain.status=='Active'">
+                                    <a href="javascript:void(0)" class="actions" style="cursor:pointer" 
+                                       ng-click="whoisDomain(domain.domain_name)"
+                                       title = "Whois"
                                        eatclick
-                                   ><i class="icon-budicon-687"></i>
-                                    </span>
+                                   ><i class="icon-budicon-377"></i>
+                                    </a> &nbsp;
+                                   
+                                    <a href="#/domains/{{domain.domain_name}}" class="actions" style="cursor:pointer" 
+                                       title = "Modifier ce domaine"
+                                   ><i class="icon-budicon-331"></i>
+                                    </a> &nbsp;
+
+                                    <a href="javascript:void(0)" class="actions" style="cursor:pointer" 
+                                       ng-click="renewDomain(domain.domain_name)"
+                                       title = "Renouvelé ce domaine"
+                                       eatclick
+                                   ><i class="icon-budicon-435"></i>
+                                    </a>
                                  </span>
-                              </td>
+                              </td><td>{{domain.domain_creation_date | cut:true:10:' '}}</td>
                               <td>{{domain.domain_expiry_date | cut:true:10:' '}}</td>
-                              <td><span class="label" ng-class="{Active:'label-success', Pendding:'label-warning'}[domain.status]"> {{domain.status}} </span></td>
+                              <td>
+                                 <span class="label" ng-class="{Active:'label-success', Pending:'label-warning', Expiring:'label-danger'}[domain.status]"> {{domain.status}} </span>
                               </td>
-                              
                            </tr>
                         </tbody>
                      </table>
@@ -117,55 +127,11 @@ ob_start();
                                   <span aria-hidden="true">&times;</span>
                                   <span class="sr-only">Close</span>
                                </button>
-                               <h4 class="modal-title" id="mModalLabel"><?php _e("Détails", "active-texto"); ?></h4>
+                               <h4 class="modal-title" id="mModalLabel"><?php _e("Whois", "domain-manager"); ?></h4>
                            </div>
                            <div class="modal-body">
-                              <span><?php _e("Message de: ", "active-texto"); ?><strong>{{selectedCampaign._from}}</strong></span>
-                              <div class="alert alert-info">{{selectedCampaign.OutgoingMess}}</div>
-                              <div class="pull-right">
-                                 <a href="<?php echo $AT_BASE; ?>/../csv.php?c={{selectedCampaign.OutgoingGroupId}}" 
-                                    class="btn btn-default btn-xs">Download CSV
-                                 </a>
-                              </div>
-                              <table height="200" class="table table-condensed table-striped table-responsive" style="overflow:auto">
-                                 <thead>
-                                    <tr>
-                                       <th width="40"><div class="th">
-                                        #
-                                       </div></th>
-                                       <th><div class="th">
-                                        <?php _e("Date", "active-texto"); ?>
-                                       </div></th>
-                                       <th><div class="th">
-                                          <?php _e("Destinataires", "active-texto"); ?>
-                                       </div></th>
-                                       <th><div class="th" style="text-align: right">
-                                          <?php _e("Statut", "active-texto"); ?>
-                                       </div></th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr data-ng-repeat="(key, destinator) in selectedCampaign._to track by $index">
-                                       <td width="40">{{key+1}}</td>
-                                       <td>{{selectedCampaign.OutgoingDate | date:'yyyy-MM-dd HH:mm:ss'}}</td>
-                                       <td>{{destinator}}</td>
-                                       <td align="right">
-                                          <span class="label label-success" 
-                                             ng-if="(getSendStatus(destinator, selectedCampaign)=='delivered')">
-                                             Delivered
-                                          </span>
-                                          <span class="label label-danger" 
-                                             ng-if="(getSendStatus(destinator, selectedCampaign)=='failed')">
-                                             failed
-                                          </span>
-                                          <span class="label label-warning" 
-                                             ng-if="(getSendStatus(destinator, selectedCampaign)=='pending')">
-                                             pending
-                                          </span>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
+                              <pre>{{whoisContent|sanitize}}</pre>
+                             
                            </div>
                            <div class="modal-footer">
                               <button class="btn btn-default btn-xs" ng-click="close()">Close</button>
@@ -175,13 +141,68 @@ ob_start();
                   </div>
                </div>
             </div>
+         </section>
 
+
+        <section ng-controller="dnsInfoCtrl" class="content-page" ng-if="isDnsInfo"  ng-class="{'current': isDnsInfo == true}" >
+            <div class="row">
+               <div class="col-md-12 content-header">
+                  <h1 class="pull-left">{{domain_name}}</h1>
+                  
+               </div>
+            </div>
+	    <!-- .row -->
+	    
+            <div class="row">
+               <!-- History Box widget -->
+               <div class="col-md-12 loaded">
+	          <div class="widget-content" ng-show="!loading">
+                     <table id="domains-dns-table" class="table table-condensed table-striped" style="">
+                       <thead>
+                           <tr>
+                              <th width="70"><?php _e('Type', 'manager'); ?></th>
+                              <th><?php _e('Hostname', 'manager'); ?></th>
+                              <th><?php _e('Value', 'manager'); ?></th>
+                              <th width="120" align="right"><?php _e('TTL', 'manager'); ?></th>
+                              <th width="100"></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr data-ng-repeat="v in domain_records"
+                               title="click to see details"
+                             ><td>{{v.type}}</td>
+                              <td>{{v.hostname}}</td>
+                              <td>{{v.data}}</td>
+                              <td align="right">{{v.ttl}}</td>
+                              <td align="right">
+                                 <span showonparenthover >
+                                    <a href="javascript:void(0)" class="actions" style="cursor:pointer" 
+                                       ng-click="editDomainRecord(v.id)"
+                                       title = "Edit record"
+                                       eatclick
+                                   ><i class="icon-budicon-274"></i>
+                                    </a> &nbsp;
+                                  
+                                    <a href="javascript:void(0)" class="actions" style="cursor:pointer; color:red" 
+                                       ng-click="deleteDomainRecord(v.id)"
+                                       title = "Supprimer ce enregistrement"
+                                       eatclick
+                                   ><i class="icon-budicon-501"></i>
+                                    </a>
+                                 </span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>         
+                  </div>
+               </div>
+            </div>
          </section>
          
          <section class="content-page" ng-if="isRegister" ng-class="{'current': isRegister == 1}" ng-controller="registerDomainCtrl">
             <div class="row">
                <div class="col-md-12 content-header">
-                  <h1 class="pull-left"><?php _e("Enrégistrement de domain", "active-texto"); ?></h1>
+                  <h1 class="pull-left"><?php _e("Enrégistrement de domain", "domain-manager"); ?></h1>
                </div>
             </div>
 	    <!-- .row -->  
@@ -194,7 +215,7 @@ ob_start();
                         style="width:100%; height:48px"
                         id="domain_availability_verification_form" 
                         name="domain_availability_verification_form" 
-                        placeholder="<?php _e('Saisissez un ou plusieurs noms .tg, .com, .net, .org, séparés par un espace', 'active-texto'); ?>"
+                        placeholder="<?php _e('Saisissez un ou plusieurs noms .tg, .com, .net, .org, séparés par un espace', 'domain-manager'); ?>"
                         ng-model=avalaibilityCheck.domains
                       ></input>
   	            </div>
@@ -202,7 +223,7 @@ ob_start();
                        type="submit"
                        ng-click="checkDomainIsAvalaible()"
                        on__click="window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);"
-                    ><?php _e('Vérifier', 'active-texto'); ?></button>
+                    ><?php _e('Vérifier', 'domain-manager'); ?></button>
                   </form>
                </div>
                <div class="col-md-12">
@@ -226,11 +247,11 @@ ob_start();
                                 </span>
 
                                 <span style="color:red; font-size:12px" ng-if="domain.status=='not_available'">
-                                  <?php _e("Non disponible", "active-texto"); ?>
+                                  <?php _e("Non disponible", "domain-manager"); ?>
                                 </span>
 
                                 <span style="font-size:12px" ng-if="domain.status=='checking'">
-                                  <?php _e("Vérification ...", "active-texto"); ?>
+                                  <?php _e("Vérification ...", "domain-manager"); ?>
                                 </span>
 
                               </td>
@@ -247,7 +268,7 @@ ob_start();
          <section class="content-page" ng-if="isCart" ng-class="{'current': isCart == 1}" ng-controller="showCartCtrl">
             <div class="row">
                <div class="col-md-12 content-header">
-                  <h1 class="pull-left"><?php _e('Votre panier', 'active-texto'); ?></h1>
+                  <h1 class="pull-left"><?php _e('Votre panier', 'domain-manager'); ?></h1>
                   <a href="<?php echo site_url(); ?>/search" class="btn btn-primary pull-right new">
                      <i class="icon-budicon-473_"></i><?php _e('&nbsp;Ajouter un domaine&nbsp;', 'manager'); ?>
                   </a>
@@ -279,13 +300,13 @@ ob_start();
                            </tr>
                         </tbody>
                      </table>
-                     <p ng-if="cartData.length == 0" class="alert alert-info"> <?php _e("Votre panier est vide", "active-texto"); ?></p>
+                     <p ng-if="cartData.length == 0" class="alert alert-info"> <?php _e("Votre panier est vide", "domain-manager"); ?></p>
                 </div>
                 <div class="col-md-4">
                    <table id="scheduled-table" class="table table-condensed table-bordered" style="">
                       <thead>
                            <tr class="bg-primary_">
-                              <th ><?php _e("Votre commande", "active-texto"); ?> ({{cartData.length}} <?php _e("éléments", "active-texto"); ?>)</th>
+                              <th ><?php _e("Votre commande", "domain-manager"); ?> ({{cartData.length}} <?php _e("éléments", "domain-manager"); ?>)</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -293,7 +314,7 @@ ob_start();
                               <td align="right" style="padding: 18px 8px"><strong>Total: €{{cartData.length * 15}}</strong></td>
                            </tr>
                            <tr ng-if="cartData.length">
-                             <td align="center"><a href="#/payment" class="btn btn-success"><?php _e("Payer maintenant", "active-texto"); ?></a></td>
+                             <td align="center"><a href="#/payment" class="btn btn-success"><?php _e("Payer maintenant", "domain-manager"); ?></a></td>
                            </tr>
                         </tbody>
                      </table>
@@ -302,234 +323,19 @@ ob_start();
          </section>
 
 
-	 <section class="content-page" ng-if="isPayment" ng-class="{'current': isPayment == 1}"  ng-controller="paymentCtrl">
-	    <div class="row">
-	       <div class="col-md-12 content-header">
-		  <h1 class="pull-left"><?php _e('Paiement', 'active-texto'); ?></h1>
-		  <a class="hide" href="<?php echo site_url(); ?>/search" class="btn btn-primary pull-right new" style="width:306px">
-		     <i class="icon-budicon-473_"></i><?php _e('&nbsp;Ajouter un domaine&nbsp;', 'manager'); ?>
-		  </a>
-	       </div>
-	    </div>
-	    <!-- .row -->
-	    <div class="row">
-	       <div class="col-md-7">
-               
-               <span><?php _e('Comment souhaitez-vous payer?', 'manager'); ?></span>
-		  
-                   <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
-             <ul class="nav nav-tabs" id="pmTabs" role="tablist">
-                <li role="presentation" class="active">
-                   <a href="javascript:void(0)" id="flooz-tab" role="tab" data-toggle="tab" aria-controls="flooz" aria-expanded="true" data-target="#flooz">Flooz</a>
-                </li>
-                <li role="presentation" class="">
-                   <a href="javascript:void(0)" role="tab" id="tmoney-tab" data-toggle="tab" aria-controls="tmoney" aria-expanded="false" data-target="#tmoney">TMoney</a>
-                </li>
-             </ul>
-             <div class="tab-content" id="pmTabContent">
-                <div class="tab-pane fade active in" role="tabpanel" id="flooz">
-                   <p> Flooz </p>
-                </div>
-                <div class="tab-pane fade" role="tabpanel" id="tmoney">
-          
-                <form name="loginform" method="post" class="form-vertical" role="form" action="" ng-show="requirePhone">
-                 <div class="form-group">
-                    <label for="phone" class="col-sm-5 control-label"><span class="small">Entrez votre numéro TMoney&nbsp;</span></label>
-                    <div class="col-sm-7">
-                        <input type="text" name="log" id="user_phone" value="" size="20" class="form-control" >
-                    </div>
-                 </div>
-
-                 <div class="form-group">
-                     <div class="col-sm-offset-6 col-sm-6">
-                         <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-success btn-mini" value="Payer maintenant" ng-click="saveCommand('9090')">
-                     </div>
-                 </div>
-               </form>
-                 
-                <div ng-bind-html="QRCode"></div>
-                </div>
-             </div>
-           </div>
-
-
-		</div>
-		<div class="col-md-5">
-		   <table id="scheduled-table" class="table table-condensed table-bordered" style="">
-		      <thead>
-		           <tr class="bg-primary_">
-		              <th colspan="2"><?php _e("Votre commande", "active-texto"); ?> ({{cartData.length}} <?php _e("éléments", "active-texto"); ?>)</th>
-		           </tr>
-		        </thead>
-		        <tbody>
-		           <tr data-ng-repeat="domain in cartData track by $index"
-		               title="click to see details"
-		             ><td><b>{{domain.name}}</b></td>
-		              <td align="right">€15</td>
-		           </tr>
-		           <tr>
-		              <td colspan="2" align="right" style="padding: 18px 8px"><strong>Total: €{{cartData.length * 15}}</strong></td>
-		           </tr>
-		           <tr>
-		              <td colspan="2" align="center"> </td>
-		           </tr>
-		        </tbody>
-		     </table>
-		</div>
-	    </div>
-	 </section>
-
-         <section ng-controller="scheduledCtrl" class="content-page" ng-if="isScheduled"  ng-class="{'current': isScheduled == true}" >
-            <div class="row">
-               <div class="col-md-12 content-header">
-                  <h1 class="pull-left"><?php _e("Envois différés", "active-texto"); ?></h1>
-                  <a href="#/compose" class="btn btn-primary pull-right new">
-                     <i class="icon-budicon-473_"></i><?php _e("Envoyer des SMS", "active-texto"); ?></a>
-               </div>
-            </div>
-	    <!-- .row -->
-	    
-            <div class="row">
-               <!-- History Box widget -->
-               <div class="col-md-12 loaded">
-	          <div class="widget-content" ng-show="!loading">
-                     <table id="scheduled-table" class="table table-condensed table-striped" style="">
-                        <thead>
-                           <tr>
-                              <th width="70">#</th>
-                              <th><?php _e("Date","active-texto"); ?></th>
-                              <th><?php _e("Message","active-texto"); ?></th>
-                              <th style="text-align:right"><?php _e("Destinataires","active-texto"); ?></th>
-                              <th style="text-align:right" width="100"><?php _e("Statut","active-texto"); ?></th>
-                              <th style="text-align:right" width="50"> </th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr data-ng-repeat="campaign in currentPageCampaigns" 
-                               ng-click="showDetails(campaign.OutgoingGroupId)" 
-                               title="click to see details"
-                               style="cursor:pointer"
-                             ><td>{{campaigns.length - $index - numPerPage*(currentPage-1)}}</td>
-                              <td>{{campaign.OutgoingDate | date:'yyyy-MM-dd HH:mm:ss'}}</td>
-                              <td>{{campaign.OutgoingMess| cut:true:50:'...'}}</td>
-                              <td style="text-align:right">{{campaign._to.length}}</td>
-                              <td style="text-align:right">
-                                 <span class="label label-default"><?php _e('Envoi différé','active-texto'); ?>
-                                 </span>
-                              </td>
-                              <td style="text-align:right">
-                                 <span showonparenthover>
-                                    <span class="actions" style="cursor:pointer" 
-                                       ng-click="useAsModel(campaign.OutgoingGroupId)"
-                                       title = "<?php _e('Utiliser ceci comme modèle pour un nouveau message','active-texto'); ?>"
-                                       eatclick
-                                   ><i class="icon-budicon-687"></i>
-                                    </span>
-                                    <span title="Supprimer" style="cursor:pointer; height:6px" 
-                                          ng-click="deleteScheduled([campaign.OutgoingGroupId])" 
-                                          eatclick>
-                                       <i class="icon-budicon-501" style="color:#c31313"></i>
-                                    </span>
-                                 </span>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     <footer class="table-footer">
-                        <div class="row">
-                           <div class="col-md-6 page-num-info">
-                              <span>
-                                 <?php _e('Afficher','active-texto'); ?>
-                                 <select data-ng-model="numPerPage"
-                                    data-ng-options="num for num in numPerPageOpt"
-                                    data-ng-change="onNumPerPageChange()"
-                                    class="ui-select">
-                                 </select> 
-                                 <?php _e('éléments par page','active-texto'); ?>
-                              </span>
-                           </div>
-                           <div class="col-md-6 text-right pagination-container">
-                              <pagination class="pagination-sm"
-                                ng-model="currentPage"
-                                total-items="filteredCampaigns.length"
-                                max-size="4"
-                                ng-change="select(currentPage)"
-                                items-per-page="numPerPage"
-                                rotate="false"
-                                previous-text="&lsaquo;" next-text="&rsaquo;"
-                                boundary-links="true">
-                              </pagination>
-                           </div>
-                        </div>
-                     </footer>
-                     <div id="historyModal">
-                        <script type="text/ng-template" id="scheduledModalContent.html">
-                           <div class="modal-header">
-                               <button type="button" class="close" data-dismiss="modal" ng-click="close()">
-                                  <span aria-hidden="true">&times;</span>
-                                  <span class="sr-only"><?php _e('Fermer','active-texto'); ?></span>
-                               </button>
-                               <h4 class="modal-title" id="mModalLabel">Scheduled details</h4>
-                           </div>
-                           <div class="modal-body">
-                              <span>Message de: <strong>{{selectedCampaign._from}}</strong> - <?php _e('Envoi programé pour le: ','active-texto'); ?> {{selectedCampaign.SendOn | date:'yyyy-MM-dd HH:mm'}} </span>
-                              <div class="alert alert-info">{{selectedCampaign.OutgoingMess}}</div>
-                              <div class="pull-right">
-                                 <a href="<?php echo $AT_BASE; ?>/../csv.php?c={{selectedCampaign.OutgoingGroupId}}" 
-                                    class="btn btn-default btn-xs"><?php _e('Télécharger en CSV','active-texto'); ?>
-                                 </a>
-                              </div>
-                              <table height="200" class="table table-condensed table-striped table-responsive" style="overflow:auto">
-                                 <thead>
-                                    <tr>
-                                       <th width="40"><div class="th">
-                                        #
-                                       </div></th>
-                                       <th><div class="th">
-                                         <?php _e('Date','active-texto'); ?>
-                                       </div></th>
-                                       <th><div class="th">
-                                          <?php _e('Destinataires','active-texto'); ?>
-                                       </div></th>
-                                       <th><div class="th" style="text-align: right">
-                                          <?php _e('Statut','active-texto'); ?>
-                                       </div></th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr data-ng-repeat="(key, destinator) in selectedCampaign._to track by $index">
-                                       <td width="40">{{key+1}}</td>
-                                       <td>{{selectedCampaign.OutgoingDate | date:'yyyy-MM-dd HH:mm:ss'}}</td>
-                                       <td>{{destinator}}</td>
-                                       <td align="right">
-                                          <span class="label label-default">
-                                             <?php _e('Envoi différé','active-texto'); ?>
-                                          </span>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div class="modal-footer">
-                              <button class="btn btn-default btn-xs" ng-click="close()"><?php _e('Fermer','active-texto'); ?></button>
-                           </div>
-                        </script>
-                     </div>                
-                  </div>
-               </div>
-            </div>
-         </section>
+	
+         
                 
          <section id="api" class="content-page" ng-if="isAPI" ng-class="{'current': isAPI == 1}">
             <div class="row">
                <div class="col-md-12 content-header">
-                  <h1 class="pull-left"><?php _e("API", "active-texto"); ?></h1>
+                  <h1 class="pull-left"><?php _e("API", "domain-manager"); ?></h1>
                </div>
             </div>
 	    <!-- .row -->
 	    <div class="row">
             <div class="col-md-12">
-                <?php _e("Nous travaillons dur pour rendre disponible ce service très prochainement.", "active-texto"); ?>
+                <?php _e("Nous travaillons dur pour rendre disponible ce service très prochainement.", "domain-manager"); ?>
             </div>
 	    </div>
 	    <!-- .row -->
@@ -540,7 +346,7 @@ ob_start();
             <div ng-if="runningTasks.length > 0">
                <div class="row">
                   <div class="col-md-12 content-header" style="border-bottom:1px solid #efefef">
-                     <h4 class="pull-left"><?php _e('Tâches en cours d\'exécution', 'active-texto'); ?></h4>
+                     <h4 class="pull-left"><?php _e('Tâches en cours d\'exécution', 'domain-manager'); ?></h4>
                   </div>
                </div>
 	       <!-- .row -->
@@ -550,11 +356,11 @@ ob_start();
                   <div class="client-stat-boxes col-md-12 loaded">
 	             <div class="widget-content row row-stats">
                         <div class="col-md-3 stat-box-users" ng-repeat="task in runningTasks" >
-                           <small><?php _e('De','active-texto'); ?> {{task._from}} <?php _e('à','active-texto'); ?> {{task._to.length}} contacts</small>
+                           <small><?php _e('De','domain-manager'); ?> {{task._from}} <?php _e('à','domain-manager'); ?> {{task._to.length}} contacts</small>
                            <br/>
                            <span>
-                               {{task.position}} <?php _e('sur','active-texto'); ?> 
-                               {{task._to.length}} <?php _e('envoyés','active-texto'); ?></span>
+                               {{task.position}} <?php _e('sur','domain-manager'); ?> 
+                               {{task._to.length}} <?php _e('envoyés','domain-manager'); ?></span>
                         </div>
                      </div>
                   </div>

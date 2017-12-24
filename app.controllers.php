@@ -1,7 +1,6 @@
 <?php
 
 require_once(dirname(__FILE__).'/lib/whois.php');
-include_once(dirname(__FILE__).'/lib/phpqrcode/phpqrcode.php');
 
 add_action( 'wp_ajax_get_sidebar', 'at_get_sidebar' );
 add_action( 'wp_ajax_get_groups', 'at_get_groups' );
@@ -121,6 +120,7 @@ function at_add_domain_to_cart(){
    wc_add_product($domain);
 
    echo json_encode($_SESSION['userCart']);
+   //$_SESSION['userCart'] = array();
 }
 
 function at_delete_domain_from_cart(){
@@ -170,83 +170,10 @@ $M = $wpdb->get_results(sprintf("select * from nic_domains order by domain_name 
 $N = array();
 
    foreach($M as $key => $domain){
-      if($domain['active'] == 1) $domain["status"] = 'Active'; //__('Actif', 'domain-manager');
-      else if ($domain['active'] == 0) $domain["status"] = 'Pendding'; //__('En attente', 'domain-manager');
-
-      // Add status expiring here
-
-      array_push($N, $domain);
+     
    } /**/
 
-   echo json_encode($N);
-}
-
-function at_save_command(){
-
-   global $wpdb;
-   $current_user = wp_get_current_user();
-   $userPhone = $current_user->user_login;
-
-   @session_start();
-   
-   //Save potential transsaction before genarating the qr
-   //Domains, amount, userPhone,
-
-   $cart = array();
-   if(isset($_SESSION['userCart'])) $cart = $_SESSION['userCart'];
-
-  /* foreach($cart as $key => $domain){
-      $wpdb->insert('nic_domains', 
-	array( 	'domain_owner' => $current_user->ID, 
-		'domain_name' => $domain['name'],
-		'domain_creation_date' => date("Y-m-d H:i:s"),
-		//'domain_expiry_date' => date('Y-m-d',strtotime(date("Y-m-d", mktime()) . " + 365 day")), //expiry date will be added once payment is made
-		'active' => 0
-        )); 
-   }  
-
-   //Potential transaction
-
-   $wpdb->insert('nic_mobile_payements', 
-	array( 	'domain_owner' => $current_user->ID, 
-		'domain_name' => $domain['name'],
-		'domain_creation_date' => date("Y-m-d H:i:s"),
-		'domain_expiry_date' => date('Y-m-d',strtotime(date("Y-m-d", mktime()) . " + 365 day")),
-		'active' => 0
-   ));*/
-
-
-
-
-    $tempDir = '../wp-content/uploads/';
-
-    $marchantPhone = '22891911307';
-    $cartPrice = count($_SESSION['userCart'])*9000;
-    
-    $codeContents = 'tel:*145*1*1*'.$cartPrice.'*'.$marchantPhone.'%23';
-    
-    // we need to generate filename somehow, 
-    // with md5 or with database ID used to obtains $codeContents...
-    $fileName = '005_file_'.md5($codeContents).'.png';
-    
-    $pngAbsoluteFilePath = $tempDir.$fileName;
-    $urlRelativeFilePath = $tempDir.$fileName;
-    
-    // generating
-    if (!file_exists($pngAbsoluteFilePath)) {
-        QRcode::png($codeContents, $pngAbsoluteFilePath);
-       // echo 'File generated!';
-    } else {
-        //echo 'File already generated! We can use this cached file to speed up site on common codes!';
-    }
-    
-    //echo 'Server PNG File: '.$pngAbsoluteFilePath;
-    echo '<img src="'.$urlRelativeFilePath.'" />'; 
-
-
-    $_SESSION['userCart'] = array(); 
-   
-   //echo json_encode($_POST);
+   echo json_encode($M);
 }
 
 

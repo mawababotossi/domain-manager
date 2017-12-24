@@ -53,10 +53,13 @@ function action_woocommerce_new_order($order_id){
 		'domain_name' => $product_name,
 		'domain_creation_date' => date("Y-m-d H:i:s"),
 		//'domain_expiry_date' => date('Y-m-d',strtotime(date("Y-m-d", mktime()) . " + ".$domain_validity." day")), //expiry date should be added once payment is made
-		'active' => 0
-        )); 
-
+		'status' => 'Pending'
+        ));
    }
+
+   //Remove items from my local cart
+   @session_start();
+   if(isset($_SESSION['userCart'])) $_SESSION['userCart'] = array();
 }
 
 
@@ -82,7 +85,7 @@ function action_woocommerce_order_status_changed( $order_id, $old_status, $new_s
 
                $expiry_date = date('Y-m-d',strtotime(date("Y-m-d", mktime()) . " + ".$domain_validity." day"));
 
-	       $R = $wpdb->get_results( "update nic_domains set active = 1, domain_expiry_date = '". $expiry_date ."' where domain_name = '".$product_name."'" ); 
+	       $R = $wpdb->get_results( "update nic_domains set status = 'Active', domain_expiry_date = '". $expiry_date ."' where domain_name = '".$product_name."'" ); 
                //exit( var_dump( $wpdb->last_query ) );
 	}
 
@@ -97,7 +100,7 @@ function action_woocommerce_order_status_changed( $order_id, $old_status, $new_s
  * @testedwith    WooCommerce 2.6.7
  */
  
-add_action( 'woocommerce_thankyou', 'action_add_content_thankyou' );
+//add_action( 'woocommerce_thankyou', 'action_add_content_thankyou' );
  
 function action_add_content_thankyou() {
    echo '<p><a href="'.get_site_url().'/search" class="btn btn-default" >Ajouter un nom de domaine</a> <a href="'.get_site_url().'/app" class="btn btn-primary" >Voir mes domaines</a></p>';

@@ -2,19 +2,21 @@ angular.module('app', ["app.http",'app.ctrls', 'ui.bootstrap','app.chart.directi
 .config(function($routeProvider, $locationProvider) {
   //$locationProvider.html5Mode(true);
   $routeProvider
-    .when('/domains',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
-    .when('/domains/:name',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/history',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
     .when('/register',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/group-list',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/scheduled',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
     .when('/api',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
-    .when('/settings',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
-    .when('/applications',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/cart',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/payment',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/report',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
+    .when('/domains',{ template: " ", controller: 'mainCtrl', animation: 'slide'})
     .otherwise({redirectTo: "/domains"})
 });
 
 angular.module('app.http', [], function($httpProvider) {
   // Use x-www-form-urlencoded Content-Type
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
-  $httpProvider.defaults.headers.common['Authorization'] = "Bearer 6bcb6df4308364d52f491b8edcae1430f10ac185ed2f1dc02e590e540be8309c"; //Absolutly insecure
  
   /**
    * The workhorse; converts an object to x-www-form-urlencoded serialization.
@@ -75,7 +77,6 @@ angular.module("app.ctrls", ['ngResource'])
 })
 .factory("UserService", ['$http', '$rootScope', function($http, $scope) {
   var endpoint = '/wp-admin';
-  var doapi    = 'https://api.digitalocean.com/v2/domains';
 
   return {
     
@@ -149,21 +150,6 @@ angular.module("app.ctrls", ['ngResource'])
       });
     },
 
-    dnsinfo: function(_domain,_cb){
-      $scope.loading = true;
-      $http({
-        url: doapi+'/'+_domain+'/records',
-        method: "GET",
-        dataType:'json',
-      }).success(function (data, status, headers, config) {
-        $scope.loading = false;
-        return _cb(data); 
-      }).error(function (data, status, headers, config) {
-        $scope.status = status;
-        $scope.loading = false;
-      });
-    },
-
     getHistory: function(_cb){
       if($scope._domains) return _cb($scope._domains);
       $scope.loading = true;
@@ -173,17 +159,35 @@ angular.module("app.ctrls", ['ngResource'])
         $scope.loading = false;
         return _cb($scope._domains); 
       });
+    },
+
+    deleteScheduled: function(_data,_cb){
+      $http({
+        url: endpoint+"/admin-ajax.php?action=delete_scheduled",
+        method: "POST",
+        data: _data,
+      }).success(function (data, status, headers, config) {
+        $scope._sdomains = data;
+        return _cb(data); 
+      }).error(function (data, status, headers, config) {
+        $scope.status = status;
+      });
     }
+
   };
 }])
 .controller('mainCtrl', ['$scope','$rootScope', '$location', function($scope, $rootScope, $location) {
   var path = $location.path(); 
-  $rootScope.isDomains = path==='/domains'
+  $rootScope.isDomains = 0===path.indexOf('/domains') ? true:false;
+  $rootScope.isHistory = 0===path.indexOf('/history')? true:false;
   $rootScope.isRegister = 0===path.indexOf('/register')? true:false;
-  $rootScope.isDnsInfo = 0===path.indexOf('/domains/')? true:false;
+  $rootScope.isGroupList = path==='/group-list';
+  $rootScope.isScheduled = 0===path.indexOf('/scheduled')? true:false;
   $rootScope.isAPI = path==='/api';
   $rootScope.isCart = path==='/cart';
-  $rootScope.isReport = path==='/report'  
+  $rootScope.isPayment = path==='/payment';
+  $rootScope.isReport = path==='/report'
+  
 }])
 
 .controller("sitePageCtrl",  ["$scope", "$rootScope", "$modal", "$log","UserService", function($scope,$rootScope, $modal, $log, UserService) {
@@ -322,6 +326,70 @@ angular.module("app.ctrls", ['ngResource'])
     }
 }])
 
+.controller("paymentCtrl", ["$scope", "$rootScope","UserService", "$filter", "$sce", function($scope, $rootScope, UserService, $filter, $sce) {
+
+    $scope.requirePhone = true;    
+
+    //UserService.getCartData(function(data){$scope.cartData = data; });
+
+    $scope.getQRCode = function(){  }
+
+    $scope.validatePhone = function(){}
+
+    $scope.saveCommand = function(_phone){
+       $scope.userPhone = _phone;
+       $scope.QRCode = {};
+
+       UserService.saveCommand(_phone, function(data){ 
+          if(data) $scope.requirePhone = false;
+          $scope.QRCode = $sce.trustAsHtml(data) 
+       });
+    }
+}])
+
+
+.controller("addTaskModalCtrl", ["$scope", "$rootScope", "$modal", "$log","UserService", function($scope,$rootScope, $modal, $log, UserService) {
+     $scope.open = function() {
+        
+        var modalInstance;
+        
+        modalInstance = $modal.open({templateUrl: "myModalContent.html",controller: "addTaskModalInstanceCtrl",resolve: {invoice: function() {
+                    return $scope.invoice
+        }}})
+    }
+
+    $rootScope.computeMessagePrice = function(){
+       UserService.getMessageInvoice($scope.message, function(data){
+          $rootScope.modalData = data;
+          $rootScope.showTaskModalFooter = true;
+     });
+    }
+
+     $rootScope.initTaskSubmission = function() {
+        $rootScope.showTaskModalFooter = true;
+        $rootScope.computeMessagePrice();
+   }
+  
+   $rootScope.confirmTask = function() {
+      $rootScope.showTaskModalFooter = false;
+      UserService.submitTask($scope.message, function(data){
+       //On doit creer un objet pour respecter le format utilisé dans la vue
+       var dataObject = [];
+       dataObject.content = data;
+       $rootScope.modalData = dataObject;
+       $rootScope._domains = null;
+       $rootScope._sdomains = null;
+     });
+   }
+
+}])
+.controller("addTaskModalInstanceCtrl", ["$scope", "$modalInstance", function($scope, $modalInstance) {
+    $scope.initTaskSubmission();
+    
+    $scope.cancelTask = function() {
+        $modalInstance.dismiss("cancel")
+    }
+}])
 .filter("sanitize", ['$sce', function($sce) {
   return function(htmlCode){
     return $sce.trustAsHtml(htmlCode);
@@ -355,6 +423,96 @@ angular.module("app.ctrls", ['ngResource'])
                 return $scope.mytime = null
             }
         }])
+.controller("groupsCtrl", ["$scope", "$rootScope", "$filter","$modal", "UserService", function($scope, $rootScope, $filter, $modal, UserService) {
+    var init;
+    $scope.groups =  [];
+    $rootScope.newGroup = {};
+    
+    UserService.getGroups(function(data){
+    $scope.groups = data;
+
+    return $scope.groups, 
+    $scope.searchKeywords = "", 
+    $scope.filteredGroups = [], 
+    $scope.row = "", 
+
+    $scope.select = function(page) {
+        var end, start;
+        return start = (page - 1) * $scope.numPerPage, end = start + $scope.numPerPage, $scope.currentPageGroups = $scope.filteredGroups.slice(start, end)
+    }, 
+  
+    $scope.onFilterChange = function() {
+        return $scope.select(1), $scope.currentPage = 1, $scope.row = ""
+    }, 
+   
+    $scope.onNumPerPageChange = function() {
+        return $scope.select(1), $scope.currentPage = 1
+    }, 
+
+    $scope.onOrderChange = function() {
+        return $scope.select(1), $scope.currentPage = 1
+    }, 
+  
+    $scope.search = function() {
+        return $scope.filteredGroups = $filter("filter")($scope.groups, $scope.searchKeywords), $scope.onFilterChange()
+    }, 
+
+    $scope.order = function(rowName) {
+        return $scope.row !== rowName ? ($scope.row = rowName, $scope.filteredGroups = $filter("orderBy")($scope.groups, rowName), $scope.onOrderChange()) : void 0;
+    },
+    
+    $scope.showDetails = function(_id) {
+        angular.forEach($scope.groups, function(_group, key){
+           if(_group.groupKey == _id){ 
+             $scope.selectedGroup = _group;
+             $scope.openGroupDetailsModal();
+           }
+        })
+    },
+
+     $rootScope.createGroup = function(){
+       UserService.createGroup($rootScope.newGroup, function(data){alert($rootScope.newGroup)});
+    },
+   
+     $scope.deleteGroups = function(_data){
+       var proceed = confirm("Vous êtes sur le point de supprimer un ou plusieurs groupes. Voulez-vous vraiment continuer?");
+       if(proceed) UserService.deleteGroups(_data, function(data){$scope.groups = data; window.location.reload();});
+    },
+
+    $scope.openAddGroupModal = function() {
+        var modalInstance;
+        modalInstance = $modal.open({templateUrl: "addGroupModalContent.html",controller: "addGroupModalInstanceCtrl"})
+    },
+    
+    $scope.openGroupDetailsModal = function() {
+        
+        var modalInstance;
+        
+        modalInstance = $modal.open({templateUrl: "groupDetailsModalContent.html",controller: "groupDetailsModalInstanceCtrl", resolve: {selectedGroup: function() {
+               return $scope.selectedGroup;
+        }}})
+    },    
+
+    $scope.numPerPageOpt = [3, 5, 10, 20], $scope.numPerPage = $scope.numPerPageOpt[2], $scope.currentPage = 1, $scope.currentPageGroups = [],
+   
+    (init = function() {
+        return $scope.search(), $scope.select($scope.currentPage), $scope.order("-timeCreated")
+    })()
+  });
+}])
+
+.controller("addGroupModalInstanceCtrl", ["$scope", "$filter", "$modalInstance", function($scope, $filter, $modalInstance) {
+    $scope.close = function() {
+        $modalInstance.dismiss("cancel")
+    }
+}])
+
+.controller("groupDetailsModalInstanceCtrl", ["$scope", "$filter", "$modalInstance", "selectedGroup", function($scope, $filter, $modalInstance, selectedGroup) {
+    $scope.selectedGroup = selectedGroup;
+    $scope.close = function() {
+        $modalInstance.dismiss("cancel")
+    }
+}])
 
 .controller("historyCtrl", ["$scope", "$rootScope", "$filter","$modal", "UserService", function($scope, $rootScope, $filter, $modal, UserService) {
     var init;
@@ -394,22 +552,51 @@ angular.module("app.ctrls", ['ngResource'])
         return $scope.row !== rowName ? ($scope.row = rowName, $scope.filteredDomains = $filter("orderBy")($scope.domains, rowName), $scope.onOrderChange()) : void 0;
     },
     
-    $scope.whoisDomain = function(_domain) {
-	$scope.whoisContent = '';
-	UserService.whois(_domain, function(data){ 
-             if(data.whois) { $scope.whoisContent = data.whois; $scope.openHistoryModal(); } 
-        });
-        
+    $scope.showDetails = function(_id) {
+        angular.forEach($scope.domains, function(_campaign, key){
+           if(_campaign.OutgoingGroupId == _id){ 
+             $scope.selectedCampaign = _campaign;
+             $scope.openHistoryModal();
+           }
+        })
+    },
+
+    $scope.useAsModel = function(_id) {
+        $rootScope.messageModel = {};
+        angular.forEach($scope.domains, function(_campaign, key){
+           if(_campaign.OutgoingGroupId == _id){
+
+             var phones = '';
+             angular.forEach(_campaign._to, function(_phone, key){
+                if(_phone !== undefined) phones = phones + _phone +"\n";
+             })
+
+             $scope.selectedCampaign = _campaign;
+             $rootScope.messageModel.content = _campaign.OutgoingMess;
+             $rootScope.messageModel.from = _campaign._from;
+             $rootScope.messageModel.to = phones;
+             window.location.href="#/compose";
+           }
+        })
     },
     
     $scope.openHistoryModal = function() {
         
         var modalInstance;
         
-        modalInstance = $modal.open({templateUrl: "historyModalContent.html", controller: "HModalInstanceCtrl", resolve: {whois: function() {
-             return $scope.whoisContent;
-        }}})
+        modalInstance = $modal.open({templateUrl: "historyModalContent.html",controller: "HModalInstanceCtrl", resolve: {selectedCampaign: function() {
+                            return $scope.selectedCampaign;
+                        }}})
     },    
+
+    $scope.getSuccessLevel = function(_campaign){
+      _campaign.success = (_campaign.delivered.length/_campaign._to.length);
+      switch(_campaign.success){
+         case 1: return 'high'; break;
+         case 0: return 'low'; break;
+         default: return 'middle'; break;
+      }
+    },
 
     $scope.numPerPageOpt = [3, 5, 10, 20], $scope.numPerPage = $scope.numPerPageOpt[2], $scope.currentPage = 1, $scope.currentPageDomains = [], 
    
@@ -419,27 +606,127 @@ angular.module("app.ctrls", ['ngResource'])
   });
 }])
 
-.controller("HModalInstanceCtrl", ["$scope", "$filter", "$modalInstance", "whois", function($scope, $filter, $modalInstance, whois) {
-    $scope.whoisContent = whois;
+.controller("scheduledCtrl", ["$scope", "$rootScope", "$filter","$modal", "UserService", function($scope, $rootScope, $filter, $modal, UserService) {
+    var init;
+    $scope.campaigns =  [];
+    $scope.selectedCampaign = {};
 
-    $scope.close = function() {
-        $modalInstance.dismiss("cancel")
-    }
+    UserService.getScheduled(function(data){
+    $scope.campaigns = data
+    
+    return $scope.campaigns, 
+    $scope.searchKeywords = "", 
+    $scope.filteredCampaigns = [], 
+    $scope.row = "", 
+
+    $scope.select = function(page) {
+        var end, start;
+        return start = (page - 1) * $scope.numPerPage, end = start + $scope.numPerPage, $scope.currentPageCampaigns = $scope.filteredCampaigns.slice(start, end)
+    }, 
+  
+    $scope.onFilterChange = function() {
+        return $scope.select(1), $scope.currentPage = 1, $scope.row = ""
+    }, 
+   
+    $scope.onNumPerPageChange = function() {
+        return $scope.select(1), $scope.currentPage = 1
+    }, 
+
+    $scope.onOrderChange = function() {
+        return $scope.select(1), $scope.currentPage = 1
+    }, 
+  
+    $scope.search = function() {
+        return $scope.filteredCampaigns = $filter("filter")($scope.campaigns, $scope.searchKeywords), $scope.onFilterChange()
+    }, 
+
+    $scope.order = function(rowName) {
+        return $scope.row !== rowName ? ($scope.row = rowName, $scope.filteredCampaigns = $filter("orderBy")($scope.campaigns, rowName), $scope.onOrderChange()) : void 0;
+    },
+    
+    $scope.showDetails = function(_id) {
+        angular.forEach($scope.campaigns, function(_campaign, key){
+           if(_campaign.OutgoingGroupId == _id){ 
+             $scope.selectedCampaign = _campaign;
+             $scope.openHistoryModal();
+           }
+        })
+    },
+
+    $scope.useAsModel = function(_id) {
+        $rootScope.messageModel = {};
+        angular.forEach($scope.campaigns, function(_campaign, key){
+           if(_campaign.OutgoingGroupId == _id){
+
+             var phones = '';
+             angular.forEach(_campaign._to, function(_phone, key){
+                if(_phone !== undefined) phones = phones + _phone +"\n";
+             })
+
+             $scope.selectedCampaign = _campaign;
+             $rootScope.messageModel.content = _campaign.OutgoingMess;
+             $rootScope.messageModel.from = _campaign._from;
+             $rootScope.messageModel.to = phones;
+             window.location.href="#/compose";
+           }
+        })
+    },
+
+    $scope.deleteScheduled = function(_data){
+       var proceed = confirm("Vous êtes sur le point de supprimer un ou plusieurs messages programmés. Voulez-vous vraiment continuer?");
+       if(proceed) UserService.deleteScheduled(_data, function(data){$scope.campaigns = data; window.location.reload();});
+    },
+    
+    $scope.openHistoryModal = function() {
+        
+        var modalInstance;
+        
+        modalInstance = $modal.open({templateUrl: "scheduledModalContent.html",controller: "HModalInstanceCtrl", resolve: {selectedCampaign: function() {
+                            return $scope.selectedCampaign;
+                        }}})
+    },    
+
+    $scope.getSuccessLevel = function(_campaign){
+      _campaign.success = (_campaign.delivered.length/_campaign._to.length);
+      switch(_campaign.success){
+         case 1: return 'high'; break;
+         case 0: return 'low'; break;
+         default: return 'middle'; break;
+      }
+    },
+
+    $scope.numPerPageOpt = [3, 5, 10, 20], $scope.numPerPage = $scope.numPerPageOpt[2], $scope.currentPage = 1, $scope.currentPageCampaigns = [], 
+   
+    (init = function() {
+        return $scope.search(), $scope.select($scope.currentPage), $scope.order("-timeCreated")
+    })()
+  });
 }])
 
-.controller("dnsInfoCtrl", ['$scope','UserService','$routeParams', function($scope, UserService, $routeParams){
-  $scope.domain_records = {};
-  $scope.domain_name = $routeParams.name; //alert($scope.domain_name);
-  UserService.dnsinfo($scope.domain_name, function(data){ 
-     if(data) { 
-        $scope.domain_records = data.domain_records;
-        angular.forEach($scope.domain_records, function(record, key){
-         record.hostname = record.name+'.'+$scope.domain_name;
-         if(record.name == '@') record.hostname = $scope.domain_name; 
-        }) 
-     } 
-  });
+.controller("HModalInstanceCtrl", ["$scope", "$filter", "$modalInstance", "selectedCampaign", function($scope, $filter, $modalInstance, selectedCampaign) {
+    $scope.selectedCampaign = selectedCampaign;
+    $scope.close = function() {
+        $modalInstance.dismiss("cancel")
+    },
 
+    /*$scope.getSendStatus = function(_phone, _campaign) {
+       angular.forEach(_campaign.delivered, function(phone, key){
+        if(phone==_phone) return 'delivered';});
+
+      angular.forEach(_campaign.failed, function(phone, key){
+        if(phone==_phone) return 'failed';});
+
+        angular.forEach(_campaign.expired, function(phone, key){
+        if(phone==_phone) return 'expired';});
+        return 'pending';
+    }*/
+
+    $scope.getSendStatus = function(_phone, _campaign) {
+        if(_campaign.delivered.indexOf(_phone) !== -1) return 'delivered';
+        if(_campaign.failed.indexOf(_phone) !== -1) return 'failed';
+        if(_campaign.expired.indexOf(_phone) !== -1) return 'expired';
+        return 'pending';
+    }
 }])
 .directive('hoversensitive',
    function() {
