@@ -1,7 +1,5 @@
 <?php
 
-require_once(dirname(__FILE__).'/lib/whois.php');
-
 add_action( 'wp_ajax_get_sidebar', 'at_get_sidebar' );
 add_action( 'wp_ajax_get_groups', 'at_get_groups' );
 add_action( 'wp_ajax_delete_groups', 'at_delete_groups' );
@@ -9,9 +7,6 @@ add_action( 'wp_ajax_get_history', 'at_get_history' );
 add_action( 'wp_ajax_get_scheduled', 'at_get_scheduled' );
 add_action( 'wp_ajax_delete_scheduled', 'at_delete_scheduled' );
 add_action( 'wp_ajax_get_user_data', 'at_get_user_data');
-
-add_action( 'wp_ajax_nopriv_add_domain_to_cart', 'at_add_domain_to_cart');
-add_action( 'wp_ajax_add_domain_to_cart', 'at_add_domain_to_cart');
 
 add_action( 'wp_ajax_delete_domain_from_cart', 'at_delete_domain_from_cart');
 add_action( 'wp_ajax_nopriv_delete_domain_from_cart', 'at_delete_domain_from_cart');
